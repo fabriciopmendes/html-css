@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url('LoveMatch.otf') format('opentype'), url('LoveMatch.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+            /* Tipos de Format ()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2em;
+            color: black;
+        }
+        h1 {
+            font-family: 'love', sans-serif;
+            font-size: 2em;
+        }
+        h2 {
+            font-family: 'Kaushan Script', serif;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Capturando Fontes</h1>
+    <h2>De Textos da Web</h2>
+    <p>Podemos baixar pelo Google Web Store extensões para captura de fontes de sites. Esse metodo é importante para quando encontrarmos uma fonte interessante e não sabemos qual é o nome dela. Uma das extensões é o Fonts Ninja, nele você pode encontrar todas as configurações daquela fonte para utilizar no seu site.</p>
+    <h2>De Imagens</h2>
+    <p>Não é possível identificar fontes que não são textuais por meios covencionais, ja que são outro tipo de arquivo. Existem sites capazes de identificar textos em imagens, é um processo mais complexo e existe risco de não identificar corretamente, mas é uma opção de uso. Sites como: What Font is, Font Squirrel, My Fonts. Nesses sites você enviar a imagem e ele faz uma leitura atrás de textos, é possivel ajustar alguns pontos da analise para melhorar o resultado.</p>
+</body>
+</html>

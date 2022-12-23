@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: linear-gradient(45deg, #d0ec35b4, #F5F19F);
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    background-image: linear-gradient(to right, #118f3bbd, #63ca27d7);
+    text-align: center;
+    padding: 1px;
+}
+header > h1 {
+    font-size: 2.5em;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.205); 
+    margin: 10px;
+}
+header > a {
+    padding: 5px;
+    text-decoration: none;    
+    font-weight: bold;
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);    
+}
+header > a:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.479);
+}
+header > a.voltar {
+     text-align: left;
+}
+nav {
+    background-image: linear-gradient(to right, #095221e3, #5bc020ef);
+    padding: 3px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.253);
+    border-radius: 0px 0px 10px 10px;
+}
+nav > p {
+    display: inline;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.0em;
+}
+nav > a {    
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(26, 226, 53, 0.932);
+    padding: 5px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);  
+}
+nav > a:hover {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.349);
+}
+main {    
+    background-color: white;
+    box-shadow: 5px 5px 15px #817f5293;
+    width: 780px;
+    padding: 10px;
+    margin: auto;
+    line-height: 1.6em;
+    text-align: justify;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: aquamarine;
+    color: green;
+}
+main a:hover {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.349);
+}
+main > img {
+    display: block;
+    margin: auto;
+}
+main > h2 {
+    text-align: left;
+    font-size: 1.3em;
+}
+main > h3 {
+    text-align: left;
+    font-size: 1em;
+}
+main ul.dividir {
+    columns: 2;
+}
+footer {
+    background-image: linear-gradient(to right, #095221e3, #5bc020ef);
+    padding: 5px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.253);
+}
+footer > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(26, 226, 53, 0.932);
+    padding: 5px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);    
+}
+footer > a:hover {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.349);

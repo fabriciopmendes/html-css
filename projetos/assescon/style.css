@@ -1,0 +1,63 @@
+@charset "UTF-8"
+rgb(19,169,157)
+body {
+    width: 800px;
+    background-color: whitesmoke;
+}
+header {
+    width: 800px;
+    margin: auto;
+}
+header img {
+    width: 800px;
+    margin-top: -8px;
+}
+nav {
+    width: 800px;
+    margin: auto;
+    background-image: linear-gradient(to right, rgb(19,169,157), rgb(116,188,196));
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.425);
+}
+nav > a {
+    text-decoration: none;    
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.425);
+}
+main {
+    min-width: 400px;
+    max-width: 800px;
+    margin: auto;
+    background-color: rgb(180,180,180);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.459);
+}
+main article {
+    padding: 10px;
+}
+main a {
+    padding: 10px;
+}
+main > article > div.quadrado {
+    display: inline-block;
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+}
+footer {
+    width: 800px;
+    margin: auto;
+    background-image: linear-gradient(to right, rgb(19,169,157), rgb(116,188,196));
+    color: rgb(147,213,209);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.425);
+}
+footer > p {
+    width: 800px;
+    margin: 0;
+    text-align: center;
+    padding: 3px;
+}
