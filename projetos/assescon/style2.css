@@ -73,7 +73,8 @@ main {
 }
 main > div > img {
     width: 580px;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
+    margin: 5px;
 }
 .artigo > p {
     padding: 5px;
