@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <Style>
+        @import url('https://fonts.googleapis.com/css2?family=Sriracha&family=Vazirmatn:wght@100;200;300;400&display=swap');
+
+        * {
+            font-family: 'Sriracha', cursive;
+            font-family: 'Vazirmatn', sans-serif;
+            font-weight: bolder;
+        }
+        body {
+            background-color: rgb(236, 236, 236)
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item {
+            width: 285px;
+            margin: auto;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        #green {
+            margin-top: 120px;
+            box-shadow: 1px 1px 4px rgba(99, 98, 98, 0.527), 0px -4px rgb(178, 247, 70);
+        }
+        #purple {
+            margin-top: 0px;
+            box-shadow: 1px 1px 4px rgba(99, 98, 98, 0.527), 0px -4px rgb(130, 50, 209);
+        }
+        #red {
+            margin-top: 120px;
+            box-shadow: 1px 1px 4px rgba(99, 98, 98, 0.527), 0px -4px rgb(216, 80, 32);
+        }
+        #blue {
+            margin-top: -100px;
+            box-shadow: 1px 1px 4px rgba(99, 98, 98, 0.527), 0px -4px rgb(70, 105, 205);
+        }
+        .item h2 {
+            margin: 0px;
+        }
+        .item p {
+            margin-bottom: 0px;
+        }
+    </Style>
+</head>
+<body>
+    <h1>Flexbox challenge</h1>
+    <main class="container">
+        <article class="item" id="green">
+            <h2>Article</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore asperiores vel cumque dolor sequi fugit odit saepe! Culpa repellat, aliquam voluptates laudantium voluptatem veritatis quam quidem. Consectetur, quaerat architecto. Molestiae.</p>
+        </article>
+        <article class="item" id="purple">
+            <h2>Article</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore asperiores vel cumque dolor sequi fugit odit saepe! Culpa repellat, aliquam voluptates laudantium voluptatem veritatis quam quidem. Consectetur, quaerat architecto. Molestiae.</p>
+        </article>
+        <article class="item" id="red">
+            <h2>Article</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore asperiores vel cumque dolor sequi fugit odit saepe! Culpa repellat, aliquam voluptates laudantium voluptatem veritatis quam quidem. Consectetur, quaerat architecto. Molestiae.</p>
+        </article>
+        <article class="item" id="blue">
+            <h2>Article</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore asperiores vel cumque dolor sequi fugit odit saepe! Culpa repellat, aliquam voluptates laudantium voluptatem veritatis quam quidem. Consectetur, quaerat architecto. Molestiae.</p>
+        </article>
+    </main>
+</body>
+</html>
