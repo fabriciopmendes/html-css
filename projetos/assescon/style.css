@@ -8,6 +8,10 @@ body {
     width: 800px;
     margin: auto;
 }
+header > img {
+    width: 800px;
+    height: 275px;
+}
 nav a {
     padding: 5px;
     text-decoration: none;
@@ -33,6 +37,7 @@ main > p {
 }
 main > img {
     width: 800px;
+    height: 275px;
 }
 td:hover {
     border-radius: 10px;
