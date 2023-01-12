@@ -41,10 +41,6 @@ main > img {
     width: 800px;
     height: 265px;
 }
-table {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
 table img, iframe {
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.13);
