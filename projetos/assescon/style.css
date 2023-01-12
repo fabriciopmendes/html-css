@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background-color: rgb(220, 220, 220);
+    background-image: radial-gradient(white, rgb(182, 182, 182));
     width: 800px;
     margin: auto;
 }
@@ -14,7 +14,7 @@ header > img {
     height: 265px;
 }
 nav {
-    background-color: #01a99bbe;
+    background-image: linear-gradient(to bottom, #02fae5, #01a99bbe);
     padding: 5px;
     text-decoration: none;            
     box-shadow: 3px 0px 0px rgba(0, 0, 0, 0.055), -1px 0px 0px rgba(0, 0, 0, 0.062);
@@ -57,7 +57,7 @@ ul {
     columns: 2;
 }
 footer {
-    background-color: #01a99bbe;
+    background-image: linear-gradient(to top, #02fae5, #01a99bbe);
     font-weight: bold;
     text-align: center;
     padding: 5px;
