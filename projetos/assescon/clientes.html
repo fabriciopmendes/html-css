@@ -8,20 +8,32 @@
     <link rel="stylesheet" href="style.css">
     <style>
         table {
-            background-image: linear-gradient(to right, rgba(128, 128, 128, 0.753), rgba(145, 145, 145, 0.699), rgba(128, 128, 128, 0.658));
+            width: 100%;
             border-collapse: collapse;
         }
-        td {
-            padding: 5px;         
-            border: 1px solid black;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.603);
-        }
-        td a {
+        tr a {
             color: white;
             font-weight: bold;
             text-decoration: none;
         }
-        td:hover {
+        th {
+            padding: 5px;         
+            border: 1px solid black;
+        }
+        td {
+            background-image: linear-gradient(to right, rgba(128, 128, 128, 0.753), rgba(145, 145, 145, 0.699), rgba(128, 128, 128, 0.658));
+            padding: 5px;         
+            border: 1px solid black;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.603);
+            text-align: left;
+        }
+        td.no {
+            background-color: red;
+        }
+        td.ok {
+            background-color: green;
+        }
+        td:hover{
             border-radius: 0px;
             box-shadow: inset 0px 0px 10px black;
         }
@@ -41,25 +53,68 @@
     <main>
         <table>
             <tr>
-                <td><a href="https://www.saomigueldabaixagrande.pi.leg.br/" title="Câmara Municipal de São Miguel da Baixa Grande" target="_blank">Câmara Municipal de São Miguel da Baixa Grande</a></td>
-                <td>2022</td>
-                <td><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=411&ano=2022&mes=12" target="_blank">12</a></td>
+                <th>Orgão Público</th>
+                <th colspan="12">Prestação de Contas Mensal 2022</th>
             </tr>
             <tr>
                 <td><a href="http://saomigueldabaixagrande.pi.gov.br/" title="Prefeitura Municipal de São Miguel da Baixa Grande" target="_blank">Prefeitura Municipal de São Miguel da Baixa Grande</a></td>
-                <td>2022</td>
-                <td><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1515&ano=2022&mes=12" target="_blank">12</a></td>
-                <td><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1515&ano=2022&mes=11" target="_blank">11</a></td>
+                <td class="no"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1515&ano=2022&mes=12" target="_blank">12</a></td>
+                <td class="no"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1515&ano=2022&mes=11" target="_blank">11</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1515&ano=2022&mes=10" target="_blank">10</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1515&ano=2022&mes=09" target="_blank">09</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1515&ano=2022&mes=08" target="_blank">08</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1515&ano=2022&mes=07" target="_blank">07</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1515&ano=2022&mes=06" target="_blank">06</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1515&ano=2022&mes=05" target="_blank">05</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1515&ano=2022&mes=04" target="_blank">04</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1515&ano=2022&mes=03" target="_blank">03</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1515&ano=2022&mes=02" target="_blank">02</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1515&ano=2022&mes=01" target="_blank">01</a></td>
             </tr>
+            <tr>
                 <td><a href="https://aroazes.pi.gov.br/aroazes/portalnoticias" title="Prefeitura Municipal de Aroazes" target="_blank">Prefeitura Municipal de Aroazes</a></td>
-                <td>2022</td>
-                <td><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1326&ano=2022&mes=12" target="_blank">12</a></td>
-                <td><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1326&ano=2022&mes=11" target="_blank">11</a></td>
+                <td class="no"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1326&ano=2022&mes=12" target="_blank">12</a></td>
+                <td class="no"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1326&ano=2022&mes=11" target="_blank">11</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1326&ano=2022&mes=10" target="_blank">10</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1326&ano=2022&mes=09" target="_blank">09</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1326&ano=2022&mes=08" target="_blank">08</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1326&ano=2022&mes=07" target="_blank">07</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1326&ano=2022&mes=06" target="_blank">06</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1326&ano=2022&mes=05" target="_blank">05</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1326&ano=2022&mes=04" target="_blank">04</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1326&ano=2022&mes=03" target="_blank">03</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1326&ano=2022&mes=02" target="_blank">02</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1326&ano=2022&mes=01" target="_blank">01</a></td>
             </tr>
+            <tr>
                 <td><a href="https://sebastiaoleal.pi.gov.br/sebastiaoleal" title="Prefeitura Municipal de Sebastião Leal" target="_blank">Prefeitura Municipal de Sebastião Leal</a></td>
-                <td>2022</td>
-                <td><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1521&ano=2022&mes=12" target="_blank">12</a></td>
-                <td><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1521&ano=2022&mes=11" target="_blank">11</a></td>
+                <td class="no"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1521&ano=2022&mes=12" target="_blank">12</a></td>
+                <td class="no"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1521&ano=2022&mes=11" target="_blank">11</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1521&ano=2022&mes=10" target="_blank">10</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1521&ano=2022&mes=09" target="_blank">09</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1521&ano=2022&mes=08" target="_blank">08</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1521&ano=2022&mes=07" target="_blank">07</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1521&ano=2022&mes=06" target="_blank">06</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1521&ano=2022&mes=05" target="_blank">05</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1521&ano=2022&mes=04" target="_blank">04</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1521&ano=2022&mes=03" target="_blank">03</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1521&ano=2022&mes=02" target="_blank">02</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=1521&ano=2022&mes=01" target="_blank">01</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.saomigueldabaixagrande.pi.leg.br/" title="Câmara Municipal de São Miguel da Baixa Grande" target="_blank">Câmara Municipal de São Miguel da Baixa Grande</a></td>
+                <td class="no"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=411&ano=2022&mes=12" target="_blank">12</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=411&ano=2022&mes=11" target="_blank">11</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=411&ano=2022&mes=10" target="_blank">10</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=411&ano=2022&mes=09" target="_blank">09</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=411&ano=2022&mes=08" target="_blank">08</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=411&ano=2022&mes=07" target="_blank">07</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=411&ano=2022&mes=06" target="_blank">06</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=411&ano=2022&mes=05" target="_blank">05</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=411&ano=2022&mes=04" target="_blank">04</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=411&ano=2022&mes=03" target="_blank">03</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=411&ano=2022&mes=02" target="_blank">02</a></td>
+                <td class="ok"><a href="https://www.tcepi.tc.br/fiscalizado/situacao-das-prestacoes-de-contas/?type=municipais&ug=411&ano=2022&mes=01" target="_blank">01</a></td>
             </tr>
         </table>
     </main>

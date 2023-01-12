@@ -17,7 +17,7 @@ nav {
     background-color: #01a99bbe;
     padding: 5px;
     text-decoration: none;            
-    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.192);
+    box-shadow: 3px 0px 0px rgba(0, 0, 0, 0.055), -1px 0px 0px rgba(0, 0, 0, 0.062);
     border-radius: 10px 10px 0px 0px;
 }
 nav a {
@@ -31,7 +31,7 @@ main {
     background-image: linear-gradient(to bottom, #01a99bbe, white, white, #01a99bbe);
     width: 800px;
     margin: 0;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.205);
+    box-shadow: 3px 0px 0px rgba(0, 0, 0, 0.062), -1px 0px 0px rgba(0, 0, 0, 0.062);
 }
 main > p {    
     text-align: justify;
@@ -51,7 +51,7 @@ table img, iframe {
 }
 td:hover {
     border-radius: 10px;
-    box-shadow: inset 0px 0px 3px black;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.555);
 }
 h2 {
     padding: 10px;
@@ -66,4 +66,5 @@ footer {
     text-align: center;
     padding: 5px;
     border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 0px 0px rgba(0, 0, 0, 0.062), -1px 0px 0px rgba(0, 0, 0, 0.062);    
 }
