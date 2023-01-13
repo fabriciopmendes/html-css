@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background-image: linear-gradient(to right, white, white, rgb(163, 163, 163), #08a89d, #08a89dc2);
+    background-image: linear-gradient(135deg, white, white, #08a89d69, #08a89db7, #08a89d);
     width: 1366px;
     margin: auto;
 }
