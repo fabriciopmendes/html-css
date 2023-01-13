@@ -5,49 +5,42 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background-image: radial-gradient(white, rgb(182, 182, 182));
-    width: 800px;
+    background-image: linear-gradient(to right, white, white, rgb(163, 163, 163), #08a89d, #08a89dc2);
+    width: 1366px;
     margin: auto;
 }
 header > img {
-    width: 800px;
-    height: 265px;
+    display: block;
+    margin: auto;
 }
 nav {
-    background-image: linear-gradient(to bottom, #02fae5, #01a99bbe);
-    padding: 5px;
-    text-decoration: none;            
-    box-shadow: 3px 0px 0px rgba(0, 0, 0, 0.055), -1px 0px 0px rgba(0, 0, 0, 0.062);
-    border-radius: 10px 10px 0px 0px;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
 }
 nav a {
-    padding: 5px;
+    margin: 10px;
+    padding: 10px;
     text-decoration: none;
     font-weight: bolder;
     color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.315);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.541);
 }
 main {
-    background-image: linear-gradient(to bottom, #01a99bbe, white, white, #01a99bbe);
-    width: 800px;
     margin: 0;
-    box-shadow: 3px 0px 0px rgba(0, 0, 0, 0.062), -1px 0px 0px rgba(0, 0, 0, 0.062);
 }
 main > p {    
     text-align: justify;
     padding: 8px;
 }
-main > img {
-    width: 800px;
-    height: 265px;
-}
 table img, iframe {
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.13);
 }
-td:hover, nav a:hover {
+a img:hover, nav a:hover {
     border-radius: 10px;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.555);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.719);
 }
 h2 {
     padding: 10px;
@@ -57,10 +50,8 @@ ul {
     columns: 2;
 }
 footer {
-    background-image: linear-gradient(to top, #02fae5, #01a99bbe);
+    margin: 5px;
     font-weight: bold;
     text-align: center;
-    padding: 5px;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 3px 0px 0px rgba(0, 0, 0, 0.062), -1px 0px 0px rgba(0, 0, 0, 0.062);    
 }
