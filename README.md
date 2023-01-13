@@ -10,29 +10,34 @@
     </style>
 </head>
 <body>
-    <h1>Outros</h1>
-    <p>Comentário = <*!----></p>
-    <h1>Fechados com ;</h1>
-    <p>Less Than (<) Greater Than (>)=  &lt &gt </p>
-    <p>Simbolos especiais = &* &reg;reg &Coproduct;Coproduct &copy;copy &trade;trade &euro;euro &pound;pound &yen;yen &cent;cent &Delta;Delta &uarr;uarr</p>
-    <p>Emoji 😛 =  &#x* &#x1F61B;x1F61B &#x1F913;x1F913 (emojipedia.org)</p>
-    <h1>TAGS <*></h1>
-    <p><b>Negrito</b> = b </p>
-    <p><strong>Destaque</strong> = strong</p>
-    <p><i>Itálico</i> = i</p>
-    <p><em>Enfase</em> = em</p>
-    <h2>Texto marcado</h2>
-    <p><mark>Marcado</mark> = mark</p>
-    <p><big>texto grande</big> = big</p>
-    <p><small>texto pequeno</small> = small</p>
-    <p><del>Excluido</del> = del</p>
-    <p><ins>Inserido</ins> = ins</p>
-    <p><u>Sublinhado</u> = U</p>
-    <p>X<sup>20</sup>+3 = sup</p>
-    <p>H<sub>2</sub>O = sub</p>
-    <p><pre><code>Manter       formatação</code></pre> = pre code</p>
-    <p><q>Citações</q> = q</p>
-    <p>Citações completas = blockquote</p>
-    <p>Invertido = bdo</p>
+    <ul>TAGS <*>
+        <li><b>Negrito</b> = b </li>
+        <li><strong>Destaque</strong> = strong</li>
+        <li><i>Itálico</i> = i</li>
+        <li><em>Enfase</em> = em</li>
+        <li><mark>Marcado</mark> = mark</li>
+        <li><big>texto grande</big> = big</li>
+        <li><small>texto pequeno</small> = small</li>
+        <li><del>Excluido</del> = del</li>
+        <li><ins>Inserido</ins> = ins</li>
+        <li><u>Sublinhado</u> = U</li>
+        <li>X<sup>20</sup>+3 = sup</li>
+        <li>H<sub>2</sub>O = sub</li>
+        <li><pre><code>Manter       formatação</code></pre> = pre code</li>
+        <li><q>Citações</q> = q</li>
+        <li>Citações completas = blockquote</li>
+        <li>Invertido = bdo</li>
+        <li>Lista de definição = dl e dt</li>
+    </ul>
+    <ul>Final ;
+        <li>Less Than / Greater Than=  &lt (<) &gt (>)</li>
+        <li>Simbolos especiais = &* (&reg;)reg (&Coproduct;)Coproduct (&copy;)copy (&trade;)trade (&euro;)euro (&pound;)pound (&yen;)yen (&cent;)cent (&Delta;)Delta (&uarr;)uarr</li>
+        <li>Emoji =  &#x* (&#x1F61B;)x1F61B (&#x1F913;)x1F913 (emojipedia.org)</li>
+    </ul>
+    <ul>Outros
+        <li>Comentário = <*!----></li>
+        <li>Localizar arquivo = ../ (anterior) */ (interna)</li>
+        <li>Links = target: _self (atual) rel: _next (prox. pagina) _prev (pagina ant.) type: apliccation/pdf</li>
+    </ul>
 </body>
 </html>
