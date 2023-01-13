@@ -30,5 +30,9 @@
     <p><u>Sublinhado</u> = U</p>
     <p>X<sup>20</sup>+3 = sup</p>
     <p>H<sub>2</sub>O = sub</p>
+    <p><pre><code>Manter       formatação</code></pre> = pre code</p>
+    <p><q>Citações</q> = q</p>
+    <p>Citações completas = blockquote</p>
+    <p>Invertido = bdo</p>
 </body>
 </html>
