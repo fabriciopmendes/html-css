@@ -9,11 +9,13 @@
         mark {background-color: limegreen;}
     </style>
 </head>
-<body>    
-    <p>Less Than e Greater Than =  &lt (<) &gt (>) + ;</p>
-    <p>Simbolos especiais = &*; &reg;reg &Coproduct;Coproduct &copy;copy &trade;trade &euro;euro &pound;pound &yen;yen &cent;cent &Delta;Delta &uarr;uarr</p>
-    <p>Emoji 😛 =  &#x*; &#x1F61B;x1F61B &#x1F913;x1F913 (emojipedia.org)</p>
+<body>
+    <h1>Outros</h1>
     <p>Comentário = <*!----></p>
+    <h1>Fechados com ;</h1>
+    <p>Less Than (<) Greater Than (>)=  &lt &gt </p>
+    <p>Simbolos especiais = &* &reg;reg &Coproduct;Coproduct &copy;copy &trade;trade &euro;euro &pound;pound &yen;yen &cent;cent &Delta;Delta &uarr;uarr</p>
+    <p>Emoji 😛 =  &#x* &#x1F61B;x1F61B &#x1F913;x1F913 (emojipedia.org)</p>
     <h1>TAGS <*></h1>
     <p><b>Negrito</b> = b </p>
     <p><strong>Destaque</strong> = strong</p>
