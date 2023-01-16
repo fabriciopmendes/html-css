@@ -6,7 +6,7 @@
 }
 body {
     background-image: linear-gradient(135deg, white, white, #08a89d69, #08a89db7, #08a89d);
-    width: 1366px;
+    width: 1000px;
     margin: auto;
 }
 header > img {
@@ -14,17 +14,17 @@ header > img {
     margin: auto;
 }
 nav {
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     text-decoration: none;
     text-align: center;
 }
 nav a {
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     font-weight: bolder;
-    color: white;
+    color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.541);
 }
 main {
