@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 /* Configurações Gerais */
-
 * {
     margin: 0px;
     padding: 0px;
@@ -19,4 +18,18 @@ h1 {
     color: white;
     text-shadow: 2px 2px 0px #233eff;
     padding: 10px;
+}
+/* Aparelho em pé (retrato) */
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url(../imagens/cev-portrait.jpg);
+        background-position: center bottom;
+    }            
+}
+/* Aparelho em deitado (paisagem) */
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(../imagens/cev-landscape.jpg);
+        background-position: left bottom;
+    }            
 }
