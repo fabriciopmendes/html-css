@@ -40,12 +40,28 @@
         <li>Less Than / Greater Than=  &lt (<) &gt (>)</li>
         <li>Simbolos especiais = &* (&reg;)reg (&Coproduct;)Coproduct (&copy;)copy (&trade;)trade (&euro;)euro (&pound;)pound (&yen;)yen (&cent;)cent (&Delta;)Delta (&uarr;)uarr</li>
         <li>Emoji =  (&#x*) (&#x1F61B;)x1F61B (&#x1F913;)x1F913 (emojipedia.org)</li>
+        <li>Espaçamento entre linhas = text-indent (ex: 30px;)</li>
+        <li>display = none (esconder) block (virar bloco) inline (se mantem na linha) flex (hibrido)</li>
+        <li>:hover = efeito do mouse por cima</li>
+        <li>:visited = após clicado</li>
+        <li>:active = clique</li>
+        <li>::before = aparecer antes</li>
+        <li>::after = aparecer depois</li>
+        <li>content = inserir objeto</li>
+        <li>outline = linha após margem</li>
+        <li>background Shorthand = color imagem (src) position (left, right, top, bottom, center, relative, absolute, sticky) repeat [size] (x, y) attachement</li>
+        <li>transform = translate (x, y)</li>
+        <li>border-collapse = collapse (grudar table)</li>
+        <li>vertical-allign = middle (td)</li>
+        <li>:nth-child(*) = odd even</li>
+        <li>overflow = -x -y</li>
     </ul>
     <h2>Outros</h2>
     <ul>
         <li>Comentário = <*!----></li>
         <li>Localizar arquivo = ../ (anterior) */ (interna)</li>
         <li>Links = target: _self (atual) rel: _next (prox. pagina) _prev (pagina ant.) external (outro site) type: apliccation/pdf image/png audio/mpeg.ogg.wav video/mp4.webm.ogg</li>
+        <li>Anatomia tabelas = TABLE > Caption Thead TBody TFoot > tr td th (scope) </li>
     </ul>
 </body>
 </html>
