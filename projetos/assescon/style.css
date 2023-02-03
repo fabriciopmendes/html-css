@@ -8,6 +8,8 @@ body {
     background-image: linear-gradient(135deg, white, white, #08a89d69, #08a89db7, #08a89d);
     width: 1000px;
     margin: auto;
+    text-align: justify;
+    font-size: 0.95em;
 }
 header > img {
     display: block;
