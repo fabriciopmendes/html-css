@@ -30,7 +30,8 @@ nav a {
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.541);
 }
-nav a:hover {
+nav a:hover, td:hover {
+    border-radius: 0px;
     box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.719);
 }
 section.container1 {
