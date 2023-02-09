@@ -43,6 +43,9 @@ div.links {
     margin: 5px;
     text-align: center;
 }
+div.sub {
+    display: block;
+}
 div.conteudo {
     width: 800px;
     padding: 5px;

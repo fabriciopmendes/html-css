@@ -25,13 +25,15 @@
         <section class="container1">
             <div class="links">
                 <a href="https://www.tce.pi.gov.br/" title="Tribunal de Contas do Estado do Piauí" target="_blank"><img src="imagens/tce.png" alt="Tribunal de Contas do Estado do Piauí"></a>
-                <a href="https://sistemas.tce.pi.gov.br/sagres-web/login.xhtml" title="SAGRES WEB" target="_blank"><img src="imagens/sagres.png" alt="SAGRES WEB"></a>
-                <a href="https://sistemas.tce.pi.gov.br/documentacao-web/" title="DOCUMENTAÇÃO WEB" target="_blank"><img src="imagens/documentacaoweb.webp" alt="DOCUMENTAÇÃO WEB"></a>
-                <a href="https://sistemas.tcepi.tc.br/contratosweb/" title="CONTRATOS WEB" target="_blank"><img src="imagens/contratos.webp" alt="CONTRATOS WEB"></a>
-                <a href="https://sistemas.tcepi.tc.br/licitacoesweb/" title="LICITAÇÃO WEB" target="_blank"><img src="imagens/licitacoes.webp" alt="LICITAÇÃO WEB"></a>
-                <a href="https://sistemas.tcepi.tc.br/cadastroweb/f/t/inicial" title="CADASTRO WEB" target="_blank"><img src="imagens/cadastroweb.webp" alt="CADASTRO WEB"></a>
-                <a href="https://sistemas.tcepi.tc.br/criacaodeusuarios" title="CRIAÇÃO DE USUÁRIO" target="_blank"><img src="imagens/criacao-de-usuario.webp" alt="CRIAÇÃO DE USUÁRIO"></a>
-                <a href="https://protocoloweb.tce.pi.gov.br/" title="PROTOCOLO WEB" target="_blank"><img src="imagens/protocolo-tce.jpg" alt="PROTOCOLO WEB"></a>
+                <div class="sub">
+                    <a href="https://sistemas.tce.pi.gov.br/sagres-web/login.xhtml" title="SAGRES WEB" target="_blank"><img src="imagens/sagres.png" alt="SAGRES WEB"></a>
+                    <a href="https://sistemas.tce.pi.gov.br/documentacao-web/" title="DOCUMENTAÇÃO WEB" target="_blank"><img src="imagens/documentacaoweb.webp" alt="DOCUMENTAÇÃO WEB"></a>
+                    <a href="https://sistemas.tcepi.tc.br/contratosweb/" title="CONTRATOS WEB" target="_blank"><img src="imagens/contratos.webp" alt="CONTRATOS WEB"></a>
+                    <a href="https://sistemas.tcepi.tc.br/licitacoesweb/" title="LICITAÇÃO WEB" target="_blank"><img src="imagens/licitacoes.webp" alt="LICITAÇÃO WEB"></a>
+                    <a href="https://sistemas.tcepi.tc.br/cadastroweb/f/t/inicial" title="CADASTRO WEB" target="_blank"><img src="imagens/cadastroweb.webp" alt="CADASTRO WEB"></a>
+                    <a href="https://sistemas.tcepi.tc.br/criacaodeusuarios" title="CRIAÇÃO DE USUÁRIO" target="_blank"><img src="imagens/criacao-de-usuario.webp" alt="CRIAÇÃO DE USUÁRIO"></a>
+                    <a href="https://protocoloweb.tce.pi.gov.br/" title="PROTOCOLO WEB" target="_blank"><img src="imagens/protocolo-tce.jpg" alt="PROTOCOLO WEB"></a>
+                </div>
             </div>
             <div class="conteudo">
                 <p> A ASSESCON – ASSESSORIA & CONSULTORIA CONTABIL LTDA é uma empresa especializada em serviços contábeis de área de Contabilidade Publica, Empresarial, Terceiro Setor e   Partidária/Eleitoral, que vem atuando neste ramo desde 2009, tendo prestado serviços relevantes nestas áreas em vários Estados do Piauí e Maranhão.</p>
@@ -87,5 +89,17 @@
         <p>Todos os direitos reservados | 2023 | ASSESCON - Assessoria & Consultoria Contábil</p>
     </footer>
     <hr>
+    <script>
+        let toggle = document.querySelector('div.links')
+        let sub = document.querySelector('div.sub')
+        toggle.addEventListener('mouseout', sair)
+        toggle.addEventListener('mouseover', dentro)
+        function dentro() {
+            sub.style.display = 'block'
+        }
+        function sair() {
+            sub.style.display = 'none'
+        }
+    </script>
 </body>
 </html>
