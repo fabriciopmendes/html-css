@@ -36,23 +36,23 @@ nav a:hover, td:hover {
 }
 section.container1 {
     display: flex;
-    height: 475px;
 }
 div.links {
     width: 200px;
     margin: 5px;
     text-align: center;
 }
-div.sub {
-    display: block;
+div.tcesub {
+    display: none;
 }
+div.certidoessub {
+    display: none;
+}
+
 div.conteudo {
     width: 800px;
     padding: 5px;
     text-align: justify;
-}
-section.container2 {
-    display: flex;
 }
 div img, iframe {
     margin: 2px;
