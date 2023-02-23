@@ -29,11 +29,14 @@ nav a, .dropbtn {
     font-weight: bolder;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.349);
-    border-bottom: 1px solid rgb(172, 172, 172);
     cursor: pointer;
+    content:after: ;
 }
 nav a:hover, a:focus {
     background-color: #979797;
+}
+.material-symbols-outlined {
+    margin-top: 3px;
 }
 .dropdown {
     position: relative;
