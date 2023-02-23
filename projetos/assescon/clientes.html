@@ -48,11 +48,26 @@
     <nav>
         <a href="index.html">HOME</a>
         <a href="empresa.html">EMPRESA</a>
-        <a href="serviços.html">SERVIÇOS</a>
+        <div class="dropdown">
+            <a onclick="myFunction1()" class="dropbtn">SERVIÇOS</a>
+            <div id="myDropdown1" class="dropdown-content">
+                <a href="contabil.html">Contábil</a>
+                <a href="irpf.html">IRPF 2023</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a onclick="myFunction2()" class="dropbtn">CERTIDÕES</a>
+            <div id="myDropdown2" class="dropdown-content">
+                <a href="https://webas.sefaz.pi.gov.br/certidaonft-web/index.xhtml" target="_blank" title="Secretaria de Fazenda do Estado do Piauí">SEFAZ-PI</a>
+                <a href="https://semf.pmt.pi.gov.br/emissao-de-certidoes/" target="_blank" title="Prefeitura Municipal de Teresina">Teresina</a>
+                <a href="https://www.tst.jus.br/certidao1" target="_blank" title="Justiça do Trabalho - Tribunal Superior do Trabalho">TST</a>
+                <a href="https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf" target="_blank" title="Fundo de Garantia do Tempo de Serviço">FGTS</a>
+                <a href="https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Emitir" target="_blank" title="Débitos Relativos a Créditos Tributários Federais e à Dívida Ativa da União">Federal</a>
+            </div>
+        </div>
         <a href="equipe.html">EQUIPE</a>
         <a href="clientes.html">CLIENTES</a>
     </nav>
-    <hr>
     <main>
         <table>
             <tr>
@@ -284,6 +299,7 @@
     <footer>
         <p>Todos os direitos reservados | 2023 | ASSESCON - Assessoria & Consultoria Contábil</p>
     </footer>
+    <script src="java.js"></script>
     <script>
         var corpo = window.document.body
         var ajan = document.querySelectorAll('a.jan')

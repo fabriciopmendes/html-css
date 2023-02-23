@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem Somos</title>
+    <title>Contábil</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,11 +15,26 @@
     <nav>
         <a href="index.html">HOME</a>
         <a href="empresa.html">EMPRESA</a>
-        <a href="serviços.html">SERVIÇOS</a>
+        <div class="dropdown">
+            <a onclick="myFunction1()" class="dropbtn">SERVIÇOS</a>
+            <div id="myDropdown1" class="dropdown-content">
+                <a href="contabil.html">Contábil</a>
+                <a href="irpf.html">IRPF 2023</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a onclick="myFunction2()" class="dropbtn">CERTIDÕES</a>
+            <div id="myDropdown2" class="dropdown-content">
+                <a href="https://webas.sefaz.pi.gov.br/certidaonft-web/index.xhtml" target="_blank" title="Secretaria de Fazenda do Estado do Piauí">SEFAZ-PI</a>
+                <a href="https://semf.pmt.pi.gov.br/emissao-de-certidoes/" target="_blank" title="Prefeitura Municipal de Teresina">Teresina</a>
+                <a href="https://www.tst.jus.br/certidao1" target="_blank" title="Justiça do Trabalho - Tribunal Superior do Trabalho">TST</a>
+                <a href="https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf" target="_blank" title="Fundo de Garantia do Tempo de Serviço">FGTS</a>
+                <a href="https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Emitir" target="_blank" title="Débitos Relativos a Créditos Tributários Federais e à Dívida Ativa da União">Federal</a>
+            </div>
+        </div>
         <a href="equipe.html">EQUIPE</a>
         <a href="clientes.html">CLIENTES</a>
     </nav>
-    <hr>
     <main>
         <h2>Constituição de Empresas</h2>
         <ul>
@@ -97,5 +112,6 @@
         <p>Todos os direitos reservados | 2023 | ASSESCON - Assessoria & Consultoria Contábil</p>
     </footer>
     <hr>
+    <script src="java.js"></script>
 </body>
 </html>

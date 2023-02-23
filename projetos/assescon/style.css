@@ -16,24 +16,50 @@ header > img {
     margin: auto;
 }
 nav {
-    background-image: radial-gradient(rgba(172, 172, 172, 0.836), rgba(90, 90, 90, 0.849), rgba(90, 90, 90, 0.863));
+    /*background-image: radial-gradient(rgba(172, 172, 172, 0.836), rgba(90, 90, 90, 0.849), rgba(90, 90, 90, 0.863));*/
+    background-color: rgb(128, 128, 128);
     margin: 0px;
     padding: 5px;
     text-decoration: none;
     text-align: center;
 }
-nav a {
-    margin: 10px;
-    padding: 5px;
+nav a, .dropbtn {
+    padding: 4px 15px;
     text-decoration: none;
     font-weight: bolder;
     color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.349);
+    border-bottom: 1px solid rgb(172, 172, 172);
+    cursor: pointer;
+}
+nav a:hover, a:focus {
+    background-color: #979797;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+    background-color: rgb(128, 128, 128);
+    overflow: auto;
+    box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.144);
+    z-index: 1;
+}
+.dropdown-content a {
+    padding: 4px 15px;
+    text-decoration: none;
+    text-align: justify;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.541);
+    border-bottom: 1px solid rgb(172, 172, 172);
+    cursor: pointer;
+    display: block;
 }
-nav a:hover, td:hover {
-    border-radius: 0px;
-    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.719);
-}
+.show {display: block;}
 section.container1 {
     display: flex;
 }
@@ -45,7 +71,7 @@ div.links {
 div.tcesub {
     display: none;
 }
-div.certidoessub {
+div.tsesub {
     display: none;
 }
 
