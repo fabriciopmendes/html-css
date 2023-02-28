@@ -22,7 +22,6 @@ nav {
     padding: 5px;
     text-decoration: none;
     text-align: center;
-    border-radius: 0px 0px 5px 5px;
 }
 nav a, nav .dropbtn {
     padding: 4px 15px;
@@ -107,12 +106,6 @@ nav > .dropdown:hover > .dropdown-content {display: block;}
 .sidenav .dropdown:hover .dropdown-content {transition-duration: 0.6s;display: flex;}
 .sidenav .dropbtn:hover, .dropdown-content:hover {transition-duration: 0.4s; -webkit-filter: grayscale(0%); opacity: 1;}
 
-  /* Main content */
-section {
-    font-size: 20px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-    margin-bottom: 5px;
-}
 
 img, iframe {
     border-radius: 5px;
