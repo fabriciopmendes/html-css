@@ -1,36 +1,15 @@
-function myFunction1() {
-document.getElementById("myDropdown1").classList.toggle("show");
-}
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
 
-function myFunction2() {
-document.getElementById("myDropdown2").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-    var openDropdown = dropdowns[i];
-    if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
     }
-    }
+  });
 }
-}
-
-let tce = document.querySelector('div.links div.tce');
-let tse = document.querySelector('div.links div.tse');
-let tcesub = document.querySelector('div.links div.tcesub');
-let tsesub = document.querySelector('div.links div.tsesub');
-
-tce.addEventListener('mouseover', dentro)
-tce.addEventListener('mouseout', fora)
-function dentro() {tcesub.style.display = "block"}
-function fora() {tcesub.style.display = "none"}
-
-tse.addEventListener('mouseover', dentro2)
-tse.addEventListener('mouseout', fora2)
-function dentro2() {tsesub.style.display = "block"}
-function fora2() {tsesub.style.display = "none"}

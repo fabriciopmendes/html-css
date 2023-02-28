@@ -23,26 +23,25 @@ nav {
     text-decoration: none;
     text-align: center;
 }
-nav a, .dropbtn {
+nav a, nav .dropbtn {
     padding: 4px 15px;
     text-decoration: none;
     font-weight: bolder;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.349);
     cursor: pointer;
-    content:after: ;
 }
-nav a:hover, a:focus {
-    background-color: #979797;
+a:hover, a:focus {
+    box-shadow: inset 0px -3px 0px #09b6aab7;
 }
-.material-symbols-outlined {
-    margin-top: 3px;
+main {
+    display: flex;
 }
 .dropdown {
     position: relative;
     display: inline-block;
 }
-.dropdown-content {
+nav .dropdown-content {
     display: none;
     position: absolute;
     margin-top: 5px;
@@ -51,8 +50,9 @@ nav a:hover, a:focus {
     box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.144);
     z-index: 1;
 }
-.dropdown-content a {
+nav .dropdown-content a {
     padding: 4px 15px;
+    min-width: 92px;
     text-decoration: none;
     text-align: justify;
     font-weight: bolder;
@@ -62,34 +62,54 @@ nav a:hover, a:focus {
     cursor: pointer;
     display: block;
 }
-.show {display: block;}
-section.container1 {
-    display: flex;
-}
-div.links {
-    width: 200px;
-    margin: 5px;
-    text-align: center;
-}
-div.tcesub {
-    display: none;
-}
-div.tsesub {
-    display: none;
-}
+nav > .dropdown:hover > .dropdown-content {display: block;}
 
-div.conteudo {
-    width: 800px;
-    padding: 5px;
-    text-align: justify;
+.sidenav {
+    height: 100%;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
 }
+.sidenav a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+.sidenav .dropdown-content {
+    display: none;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.144);
+}
+.sidenav .dropdown-content a {
+    display: inline;
+    margin: auto;
+    padding: 0;
+}
+.sidenav .dropdown-content img {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+.sidenav .dropdown:hover .dropdown-content {display: flex;}
+
+  /* Main content */
+section {
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+    
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
 div img, iframe {
     margin: 2px;
-    border-radius: 10px;
     box-shadow: 2px 2px 2px rgba(58, 58, 58, 0.13);
 }
 a img:hover {
-    border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.719);    
 }
 h2 {
