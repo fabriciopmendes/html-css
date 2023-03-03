@@ -18,7 +18,7 @@ header > img {
 nav {
     /*background-image: radial-gradient(rgba(172, 172, 172, 0.836), rgba(90, 90, 90, 0.849), rgba(90, 90, 90, 0.863));*/
     background-color: rgb(128, 128, 128);
-    margin: 0px;
+    margin-bottom: 5px;
     padding: 5px;
     text-decoration: none;
     text-align: center;
@@ -36,6 +36,15 @@ a:hover, a:focus {
 }
 main {
     display: flex;
+}
+article {
+  padding-left: 8px;
+  text-align: left;
+  height: 100%;
+}
+.cotacao {
+  width: 150px;
+  margin-bottom: 5px;
 }
 .dropdown {
     position: relative;
