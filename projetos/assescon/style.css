@@ -18,12 +18,11 @@ header > img {
 nav {
     /*background-image: radial-gradient(rgba(172, 172, 172, 0.836), rgba(90, 90, 90, 0.849), rgba(90, 90, 90, 0.863));
     background-color: rgb(128, 128, 128);*/
-    margin-bottom: 5px;
-    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #585858;
+    background-color: #777777;
+    border-radius: 0px 0px 5px 5px;
 }
 nav a, nav .dropbtn {
     padding: 4px 15px;
@@ -237,8 +236,6 @@ ul {
   .prev, .next,.text {font-size: 11px}
 }
 footer {
-    margin: 5px;
     font-weight: bold;
     text-align: center;
-    border-radius: 0px 0px 10px 10px;
 }
