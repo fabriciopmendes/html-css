@@ -54,7 +54,6 @@ article {
 nav .dropdown-content {
     display: none;
     position: absolute;
-    margin-top: 5px;
     background-color: #777777;
     overflow: auto;
     box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.144);
