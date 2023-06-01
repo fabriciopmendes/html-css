@@ -1,11 +1,11 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Aceitar caracteres brasileiros */
 
-* {
+* { /* Zera margens padrões e padroniza fonte */
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+body { /* Ajusta posição da pagina */
     background-image: linear-gradient(135deg, white, white, #08a89d69, #08a89db7, #08a89d);
     width: 1000px;
     margin: auto;
@@ -13,156 +13,98 @@ body {
     font-size: 0.95em;
 }
 
-header > img {
-    display: block;
-    margin: auto;
-}
-
-nav {
-    /*background-image: radial-gradient(rgba(172, 172, 172, 0.836), rgba(90, 90, 90, 0.849), rgba(90, 90, 90, 0.863));
-    background-color: rgb(128, 128, 128);*/
+nav { /* Visão da barra de navegação */
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #777777;
     border-radius: 0px 0px 5px 5px;
 }
-nav a, nav .dropbtn {
+nav a, nav .dropbtn {  /* Decoração dos itens dentro do nav */
     padding: 4px 15px;
     text-decoration: none;
     text-align: center;
-    color: white;
-    cursor: pointer;
+    color: white;    
+    transition-duration: 0.4s;
 }
-a:hover, a:focus, .dropdown-content a:hover {
-    /*box-shadow: inset 0px -3px 0px #09b6aab7;*/
+nav a:hover, nav a:focus, nav .dropdown-content a:hover { /* Efeitos visuais quando passa o mouse */
+    /**Linha Azul*box-shadow: inset 0px -3px 0px #09b6aab7;*/
     background-color: #ddd;
     color: black;
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-nav .dropdown-content {
+nav .dropdown-content { /* Esconde o contéudo para surgir */
     display: none;
     position: absolute;
     background-color: #777777;
-    overflow: auto;
-    box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.144);
-    z-index: 1;
 }
-nav .dropdown-content a {
-    padding: 4px 15px;
+nav .dropdown-content a { /* Ajusta o contéudo escondido */
     min-width: 92px;
-    text-decoration: none;
     text-align: justify;
-    color: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(172, 172, 172);
-    cursor: pointer;
     display: block;
 }
-nav > .dropdown:hover > .dropdown-content {display: block;}
-
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
+.dropdown:hover > .dropdown-content { /* Gatilho para surgir o conteúdo */
+    display: block;
 }
-.sidelinks {
+
+.row { /* Divide a Tela */
+  display: flex;
+}
+.sidelinks { /*Limita espaço e organiza os links */
     width: 160px;
     text-align: center;
-    display: inline-block;
     transition-duration: 0.4s;
 }
-.sidelinks a {
-    text-decoration: none;
-    font-weight: bolder;
-    color: white;
-    transition-duration: 0.4s;
-}
-.sidelinks .dropbtn {
+.sidelinks .dropbtn { /* Transição de cinza para colorido */
     -webkit-filter: grayscale(100%);
     opacity: 0.7;
     transition-duration: 0.4s;
 }
-.sidelinks .dropdown-content {
-    opacity: 0.5;
+.sidelinks .dropdown-content { /* Esconde e organiza o conteúdo */
     display: none;
     flex-flow: row wrap;
-    margin: 0;
-    padding: 0;
-    box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.144);
-    transition-duration: 0.4s;
+    opacity: 0.5;
 }
-.sidelinks .dropdown-content a {
-    display: inline;
+.sidelinks .dropdown-content a { /* Organiza itens escondidos */
     margin: auto;
-    padding: 0;
     transition-duration: 0.4s;
 }
-.sidelinks .dropdown-content img {
-    display: inline;
-    margin: 0;
-    padding: 0;
-    transition-duration: 0.4s;
-}
-.sidelinks .dropdown:hover .dropdown-content {transition-duration: 0.6s;display: flex;}
-.sidelinks .dropbtn:hover, .dropdown-content:hover {transition-duration: 0.4s; -webkit-filter: grayscale(0%); opacity: 1;}
-
-.main {
-  flex: 80%;
+.sidelinks .dropbtn:hover, .dropdown-content:hover { /*Efeito de cancelamento do cinza */
+    transition-duration: 0.4s; -webkit-filter: grayscale(0%); opacity: 1;
 }
 
-article {
-  display: flex;
-  }
-  .cotacao {
-  width: 150px;
-  margin-bottom: 5px;
-  }
+.cotacao { /* Organiza a cotação hoje */
+    width: 150px;
+    margin-bottom: 5px;
+}
 
-img, iframe {
+div img, iframe { /* Estilo das imagens e iframes */
     border-radius: 5px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
-}
-    
-  /* Some media queries for responsiveness */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-div img, iframe {
     margin: 2px;
     box-shadow: 2px 2px 2px rgba(58, 58, 58, 0.13);
 }
-a img:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.719);    
+a img:hover { /* Efeito sombreado das imagens */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.719);
 }
-h2 {
+
+h2 { /* Configuração dos H2 */
     padding: 10px;
     text-align: center;
 }
-p {
+p { /* Configuração dos p */
     line-height: 1.3em;
     padding: 5px;
 }
-ul {
+ul { /* Divide colunas das listas em 2 */
     columns: 2;
 }
-.sublinhado {
+.sublinhado { /*Sublinhar */
     text-decoration: underline;
 }
-.mySlides {display: none}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+.slideshow-container { /* Slideshow container */
   position: relative;
-  margin: auto;
 }
-
-/* Next & previous buttons */
-.prev, .next {
+.prev, .next { /* Next & previous buttons */
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -176,20 +118,14 @@ ul {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
-/* Position the "next button" to the right */
-.next {
+.next { /* Position the "next button" to the right */
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover, .next:hover { /* On hover, add a black background color with a little bit see-through */
   background-color: rgba(0,0,0,0.8);
 }
-
-/* Caption text */
-.text {
+.text { /* Caption text */
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -198,18 +134,14 @@ ul {
   width: 100%;
   text-align: center;
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
+.numbertext { /* Number text (1/3 etc) */
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
-
-/* The dots/bullets/indicators */
-.dot {
+.dot { /* The dots/bullets/indicators */
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -219,27 +151,22 @@ ul {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
   background-color: #717171;
 }
-
-/* Fading animation */
-.fade {
+.fade { /* Fading animation */
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 300px) { /* On smaller screens, decrease text size */
   .prev, .next,.text {font-size: 11px}
 }
-footer {
+
+footer { /* Footer */
     font-weight: bold;
     text-align: center;
 }
