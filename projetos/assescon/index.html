@@ -17,7 +17,7 @@
             text-align: center;
             transition-duration: 0.4s;
         }
-        .sidelinks .dropbtn { /* Transição de cinza para colorido */
+        .sidelinks .dropbtn, .sidelinks .dropdown { /* Transição de cinza para colorido */
             -webkit-filter: grayscale(100%);
             opacity: 0.7;
             transition-duration: 0.4s;
@@ -31,10 +31,25 @@
             margin: auto;
             transition-duration: 0.4s;
         }
-        .sidelinks .dropbtn:hover, .dropdown-content:hover { /*Efeito de cancelamento do cinza */
+        .sidelinks .dropbtn:hover, .dropdown-content:hover, .dropdown:hover { /*Efeito de cancelamento do cinza */
             transition-duration: 0.4s; -webkit-filter: grayscale(0%); opacity: 1;
         }
-
+        .dropdown {
+            position: relative;
+        }
+        .dropbtn::after {
+            content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,1%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+            position: absolute;
+            right: 1%;
+            bottom: 10%;
+            transition: transform .35s ease;
+            transform-origin: .5em 50%;
+        }
+        .dropbtn:hover::after {
+            content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,1%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");           
+            transform: rotate(90deg);
+        }
+        
         .cotacao { /* Organiza a cotação hoje */
             width: 150px;
             margin-bottom: 5px;
@@ -116,14 +131,14 @@
         <a href="index.html"><i class="fa fa-home"></i></a> <!-- Home -->
         <a href="empresa.html">EMPRESA</a> <!-- Quem Somos -->
         <div class="dropdown"> <!-- Loop dos Serviços -->
-            <div class="dropbtn">SERVIÇOS <i class="fa fa-caret-down"></i></div> <!-- Acesso aos Serviços -->
+            <div class="dropbtn">SERVIÇOS</div> <!-- Acesso aos Serviços -->
             <div class="dropdown-content"> <!-- Contéudo -->
                 <a href="contabil.html">Contábil</a>
                 <a href="irpf.html">IRPF 2023</a>
             </div>
         </div>
         <div class="dropdown"> <!-- Loop das Certidões -->
-            <div class="dropbtn">CERTIDÕES <i class="fa fa-caret-down"></i></div> <!-- Acesso as Certidões -->
+            <div class="dropbtn">CERTIDÕES</div> <!-- Acesso as Certidões -->
             <div class="dropdown-content"> <!-- Contéudo -->
                 <a href="https://webas.sefaz.pi.gov.br/certidaonft-web/index.xhtml" target="_blank" title="Secretaria de Fazenda do Estado do Piauí">SEFAZ-PI</a>
                 <a href="https://semf.pmt.pi.gov.br/emissao-de-certidoes/" target="_blank" title="Prefeitura Municipal de Teresina">Teresina</a>
@@ -157,7 +172,7 @@
                     <a href="https://siconfi.tesouro.gov.br/siconfi/index.jsf" title="SICONFI" target="_blank"><img src="imagens/siconfi.jpeg" alt="SICONFI"></a>
                 </div>
             </div>
-            <div class="dropbtn"> <!-- Outros links com configs dropbtn -->
+            <div class="dropdown"> <!-- Outros links com configs dropbtn -->
                 <a href="https://www42.bb.com.br/portalbb/daf/beneficiario,802,4647,4652,0,1.bbx" title="DAF BB" target="_blank"><img src="imagens/bb.png" alt="DAF BB"></a>
                 <a href="http://cas.aossoftware.com.br/apps/index.php/login" title="AOS Login" target="_blank"><img src="imagens/aos.png" alt="AOS Login"></a>
                 <a href="http://app.diarioficialdosmunicipios.org:8086/controlepublicacao/" title="DOM Publicação" target="_blank"><img src="imagens/dom.jpeg" alt="DOM Publicação"></a>
@@ -170,7 +185,7 @@
                     <a href="https://divulgacandcontas.tse.jus.br/divulga/#/" title="DivulgaCand" target="_blank"><img src="imagens/divulgacand.jpg" alt="DivulgaCand"></a>
                 </div>
             </div>
-            <div class="dropbtn"> <!-- Outros links com configs dropbtn -->
+            <div class="dropdown"> <!-- Outros links com configs dropbtn -->
                 <a href="https://www.fnde.gov.br/sigpc/login.seam" title="SIGPC" target="_blank"><img src="imagens/sigpc.jpeg" alt="SIGPC"></a>
                 <a href="https://www.gov.br/receitafederal/pt-br" title="Receita Federal" target="_blank"><img src="imagens/rf.png" alt="Receita Federal"></a>
                 <a href="https://cav.receita.fazenda.gov.br/autenticacao/login" title="E-cac" target="_blank"><img src="imagens/ecac.jpg" alt="E-cac"></a>
@@ -187,7 +202,7 @@
                     <a href="https://tools.pdf24.org/pt/" title="PDF 24" target="_blank"><img src="imagens/pdf.png" alt="PDF 24"></a>
                 </div>
             </div>
-            <div class="dropbtn"> <!-- Outros links com configs dropbtn -->
+            <div class="dropdown"> <!-- Outros links com configs dropbtn -->
                 <a href="https://cfc.org.br/" title="Conselho Federal de Contabilidade" target="_blank"><img src="imagens/cfc.gif" alt="Conselho Federal de Contabilidade"></a>
                 <a href="https://crcpi.com.br/new/" title="Conselho Regional de Contabilidade do Piauí" target="_blank"><img src="imagens/crc.png" alt="Conselho Regional de Contabilidade do Piauí"></a>
             </div>
