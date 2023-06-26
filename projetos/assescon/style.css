@@ -19,12 +19,16 @@ nav { /* Visão da barra de navegação */
     background-color: #777777;
     border-radius: 0px 0px 5px 5px;
 }
+nav a::after {
+    box-shadow: 1px -1px;
+    transform: scale(.707) rotate(45deg);
+}
 nav a, nav .dropbtn {  /* Decoração dos itens dentro do nav */
     padding: 4px 15px;
     text-decoration: none;
     text-align: center;
     color: white;    
-    transition-duration: 0.4s;
+    transition-duration: 0.4s;    
 }
 nav a:hover, nav a:focus, nav .dropdown-content a:hover { /* Efeitos visuais quando passa o mouse */
     /**Linha Azul*box-shadow: inset 0px -3px 0px #09b6aab7;*/
