@@ -10,44 +10,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .row { /* Divide a Tela */
-        display: flex;
+            display: flex;
         }
         .sidelinks { /*Limita espaço e organiza os links */
             width: 160px;
             text-align: center;
             transition-duration: 0.4s;
+            position: relative;
+            z-index: 1;
         }
-        .sidelinks .dropbtn, .sidelinks .dropdown { /* Transição de cinza para colorido */
-            -webkit-filter: grayscale(100%);
-            opacity: 0.7;
-            transition-duration: 0.4s;
+        .sidelinks .dropdown {
+            background-color: #717171;
+            border: 1px solid #717171; /* Adiciona uma borda no dropdown */
+            overflow: hidden; /* Esconde a borda superior do dropdown-content */
         }
+        .sidelinks .dropbtn {
+            position: relative;
+            z-index: 1;
+        }  
+        .sidelinks .dropbtn::after {
+            content: "";
+            position: absolute;
+            bottom: 10px;
+            right: 5px;
+            transform: translateY(-50%);
+            border-style: solid;
+            border-width: 0 7px 7px 7px;
+            border-color: transparent transparent white transparent;
+            transition: transform 0.3s ease;
+        }        
+        .dropbtn:hover::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        
         .sidelinks .dropdown-content { /* Esconde e organiza o conteúdo */
             display: none;
+            background-color: #e6e6e6;
             flex-flow: row wrap;
-            opacity: 0.5;
+            position: absolute;
+            z-index: 2;
+            /*opacity: 0.6;  Inicia com opacidade 0 */
+      transition: opacity 0.3s ease; /* Transição suave da opacidade */
+
         }
         .sidelinks .dropdown-content a { /* Organiza itens escondidos */
             margin: auto;
             transition-duration: 0.4s;
-        }
-        .sidelinks .dropbtn:hover, .dropdown-content:hover, .dropdown:hover { /*Efeito de cancelamento do cinza */
-            transition-duration: 0.4s; -webkit-filter: grayscale(0%); opacity: 1;
-        }
-        .dropdown {
-            position: relative;
-        }
-        .dropbtn::after {
-            content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,1%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
-            position: absolute;
-            right: 1%;
-            bottom: 10%;
-            transition: transform .35s ease;
-            transform-origin: .5em 50%;
-        }
-        .dropbtn:hover::after {
-            content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,1%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");           
-            transform: rotate(90deg);
         }
         
         .cotacao { /* Organiza a cotação hoje */
@@ -206,6 +214,9 @@
                 <a href="https://cfc.org.br/" title="Conselho Federal de Contabilidade" target="_blank"><img src="imagens/cfc.gif" alt="Conselho Federal de Contabilidade"></a>
                 <a href="https://crcpi.com.br/new/" title="Conselho Regional de Contabilidade do Piauí" target="_blank"><img src="imagens/crc.png" alt="Conselho Regional de Contabilidade do Piauí"></a>
             </div>
+            <div class="dropdown">
+                <p>.</p>
+            </div>
         </div>
         <div class="main"> <!-- Contéudo principal restante da flexbox -->
             <table>  <!-- Tabela que junta o paragrafo com a cotação -->
@@ -249,11 +260,9 @@
         </div>
     </section>
 
-    <hr> <!-- Linha Divisória -->
     <footer> <!-- Final -->
         <p>Todos os direitos reservados | 2023 | ASSESCON - Assessoria & Consultoria Contábil</p>
     </footer>
-    <hr>
 
     <script src="java.js"></script> <!-- Script Toggle Menu -->
 
