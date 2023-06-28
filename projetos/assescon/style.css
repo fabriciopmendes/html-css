@@ -70,6 +70,7 @@ nav .dropdown-content a { /* Ajusta o contéudo escondido */
 }
 
 .main {
+    border-radius: 20px 0px 0px 20px;
     position: relative;
     z-index: 1;
 }
