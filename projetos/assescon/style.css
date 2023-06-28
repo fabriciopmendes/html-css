@@ -65,6 +65,9 @@ nav .dropdown-content a { /* Ajusta o contéudo escondido */
 .dropdown:hover .dropdown-content { /* Gatilho para surgir o conteúdo */
     display: block;
 }
+.sidelinks:hover .dropdown:hover .dropdown-content:hover { /* Gatilho para surgir o conteúdo */
+    filter: grayscale(0%);
+}
 
 .main {
     position: relative;
@@ -96,6 +99,6 @@ ul { /* Divide colunas das listas em 2 */
 footer { /* Footer */
     font-weight: bold;
     text-align: center;
-    background-color: #777777;
+    background-color: #717171;
     border-radius: 0px 0px 40px 40px;
 }
