@@ -8,11 +8,13 @@
 body { /* Ajusta posição da pagina */
     /*background-image: linear-gradient(135deg, white, white, #08a89d69, #08a89db7, #08a89d);*/
     max-width: 1000px;
+    min-height: 1800px;
     margin: auto;
     text-align: justify;
     font-size: 0.95em;
     background-image: url(imagens/contabilidade.png);
     background-position: center;
+    background-size: cover;
 }
 header {
     display: flex;
@@ -30,8 +32,9 @@ header {
     padding-right: 40px;
 }
 .end {
+    padding: 5px;
     background-color: #127070a2;
-    border-radius: 35px 0px 0px 0px;
+    border-radius: 50px 0px 0px 0px;
 }
 .end p {
     font-size: 1em;    

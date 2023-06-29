@@ -54,6 +54,10 @@
             transition-duration: 0.4s;
         }        
         /* MAIN */
+        .cotacao-container {
+            border-left: 2px solid rgba(73, 73, 73, 0.534);
+            padding: 10px;
+        }
         .cotacao { /* Organiza a cotação hoje */
             width: 150px;
             margin-bottom: 5px;
@@ -241,12 +245,12 @@
         <div class="main"> <!-- Contéudo principal restante da flexbox -->
             <table>  <!-- Tabela que junta o paragrafo com a cotação -->
                 <tr>
-                    <td> <!-- Paragrafos -->
+                    <td class="paragrafo-container"> <!-- Paragrafos -->
                         <p> A ASSESCON – ASSESSORIA & CONSULTORIA CONTABIL LTDA é uma empresa especializada em serviços contábeis de área de Contabilidade Publica, Empresarial, Terceiro Setor e Partidária/Eleitoral, que vem atuando neste ramo desde 2009, tendo prestado serviços relevantes nestas áreas em vários Estados do <strong>Piauí</strong> e <strong>Maranhão</strong>.</p>
                         <p>Navegue pelo nosso site e saiba o que podemos lhe oferecer.</p>
                         <p>"O sucesso é a soma de pequenos esforços - repetidos dia sim, e no outro dia também."</p>
                     </td>
-                    <td> <!-- Cotação -->
+                    <td class="cotacao-container"> <!-- Cotação -->
                         <h4 class="cotacao">Cotação Hoje:</h4>
                         <div class="cotacao"><a href="https://dolarhoje.com/" class="dolar-hoje-button" data-currency="dolar" target="_blank" title="Cotação do Dólar Hoje">Dólar Hoje</a><script async src="//dolarhoje-widgets.s3.amazonaws.com/button.js"></script></div>
                         <div class="cotacao"><a href="https://dolarhoje.com/euro-hoje/" class="dolar-hoje-button" data-currency="euro" target="_blank" title="Cotação do Euro Hoje">Euro Hoje</a><script async src="//dolarhoje-widgets.s3.amazonaws.com/button.js" charset="utf-8"></script></div>
