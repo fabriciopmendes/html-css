@@ -19,6 +19,7 @@ body { /* Ajusta posição da pagina */
 header {
     display: flex;
     justify-content: flex-end;
+    max-height: 260px;
 }
 .ident {
     text-align: right;
@@ -32,9 +33,11 @@ header {
     padding-right: 40px;
 }
 .end {
-    padding: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-top: 25px;
     background-color: #127070a2;
-    border-radius: 50px 0px 0px 0px;
+    border-radius: 70% 30% 0% 0%;
 }
 .end p {
     font-size: 1em;    
