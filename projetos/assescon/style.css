@@ -6,17 +6,43 @@
 }
 /* BODY */
 body { /* Ajusta posição da pagina */
-    background-image: linear-gradient(135deg, white, white, #08a89d69, #08a89db7, #08a89d);
-    width: 1000px;
+    /*background-image: linear-gradient(135deg, white, white, #08a89d69, #08a89db7, #08a89d);*/
+    max-width: 1000px;
     margin: auto;
     text-align: justify;
     font-size: 0.95em;
+    background-image: url(imagens/contabilidade.png);
+    background-position: center;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+.ident {
+    text-align: right;
+    padding-left: 230px;
+}
+.socios p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #414141;
+    line-height: 0.6em;
+    padding-right: 40px;
+}
+.end {
+    background-color: #127070a2;
+    border-radius: 35px 0px 0px 0px;
+}
+.end p {
+    font-size: 1em;    
+    font-weight: bold;
+    line-height: 0.5em;
 }
 /* NAV */
 nav { /* Visão da barra de navegação */
     display: flex;
     justify-content: center;
-    background-color: #777777;
+    background-color: #717171c0;
     border-radius: 40px 0px 40px 0px;
 }
 nav .dropdown {
@@ -53,7 +79,7 @@ nav a:hover, nav a:focus, nav .dropdown-content a:hover { /* Efeitos visuais qua
 nav .dropdown-content { /* Esconde o contéudo para surgir */
     display: none;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     background-color: #777777;
 }
 nav .dropdown-content a { /* Ajusta o contéudo escondido */
@@ -72,12 +98,14 @@ nav .dropdown-content a { /* Ajusta o contéudo escondido */
 .main {
     border-radius: 20px 0px 0px 20px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 div img, iframe { /* Estilo das imagens e iframes */
     border-radius: 5px;
     margin: 2px;
     box-shadow: 2px 2px 2px rgba(58, 58, 58, 0.13);
+    position: relative;
+    z-index: 1;
 }
 a img:hover { /* Efeito sombreado das imagens */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.719);
@@ -90,8 +118,12 @@ p { /* Configuração dos p */
     line-height: 1.3em;
     padding: 5px;
 }
-ul { /* Divide colunas das listas em 2 */
-    columns: 2;
+ul {
+    padding-left: 100px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #585858;
+    line-height: 1.6em;
 }
 .sublinhado { /*Sublinhar */
     text-decoration: underline;
@@ -100,6 +132,6 @@ ul { /* Divide colunas das listas em 2 */
 footer { /* Footer */
     font-weight: bold;
     text-align: center;
-    background-color: #717171;
+    background-color: #717171c0;
     border-radius: 0px 0px 40px 40px;
 }
