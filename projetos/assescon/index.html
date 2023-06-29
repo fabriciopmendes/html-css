@@ -12,6 +12,7 @@
         .row { /* Divide a Tela */
             display: flex;
         }
+        /* SIDELINKS */
         .sidelinks { /*Limita espaço e organiza os links */
             width: 160px;
             text-align: center;
@@ -19,7 +20,6 @@
             position: relative;
             z-index: 1;
             background-color: #717171;
-            border-radius: -20px;
         }
         .sidelinks .dropdown {
             border: 1px solid #717171; /* Adiciona uma borda no dropdown */
@@ -39,31 +39,26 @@
             border-width: 0 7px 7px 7px;
             border-color: transparent transparent white transparent;
             transition: transform 0.3s ease;
-        }        
+        }
         .dropbtn:hover::after {
             transform: translateY(-50%) rotate(180deg);
-        }
-        
+        }        
         .sidelinks .dropdown-content { /* Esconde e organiza o conteúdo */
             display: none;
             background-color: #ffffff;
             flex-flow: row wrap;
             position: absolute;
             z-index: 2;
-            /*opacity: 0.6;  Inicia com opacidade 0 */
-      transition: opacity 0.3s ease; /* Transição suave da opacidade */
-
         }
         .sidelinks .dropdown-content a { /* Organiza itens escondidos */
             margin: auto;
             transition-duration: 0.4s;
-        }
-        
+        }        
+        /* MAIN */
         .cotacao { /* Organiza a cotação hoje */
             width: 150px;
             margin-bottom: 5px;
         }
-
         .slideshow-container { /* Slideshow container */
             position: relative;
         }
@@ -265,7 +260,7 @@
         <p>Todos os direitos reservados | 2023 | ASSESCON - Assessoria & Consultoria Contábil</p>
     </footer>
 
-    <script src="java.js"></script> <!-- Script Toggle Menu -->
+    <!-- <script src="java.js"></script> -->
 
     <script> // Script Slides
         let slideIndex = 1;
