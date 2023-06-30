@@ -28,18 +28,18 @@
             position: relative;
             z-index: 1;
         }  
-        .sidelinks .dropbtn::after {
+        .sidelinks .dropbtn::before {
             content: "";
             position: absolute;
-            bottom: 10px;
-            right: 5px;
+            bottom: 20%;
+            left: 5px;
             transform: translateY(-50%);
             border-style: solid;
-            border-width: 0 7px 7px 7px;
-            border-color: transparent transparent white transparent;
+            border-width: 0 9px 9px 9px;
+            border-color: transparent transparent #09b6ab transparent;
             transition: transform 0.3s ease;
         }
-        .dropbtn:hover::after {
+        .dropbtn:hover::before {
             transform: translateY(-50%) rotate(180deg);
         }        
         .sidelinks .dropdown-content { /* Esconde e organiza o conteúdo */
@@ -48,6 +48,7 @@
             flex-flow: row wrap;
             position: absolute;
             z-index: 2;
+            box-shadow: inset 0 0 50px #09b6aab7;
         }
         .sidelinks .dropdown-content a { /* Organiza itens escondidos */
             margin: auto;
@@ -202,7 +203,7 @@
                 </div>
             </div>
             <div class="dropdown"> <!-- Loop dos links RF -->
-                <a class="dropbtn" href="https://www.gov.br/tesouronacional/pt-br" title="Tesouro Nacional" target="_blank"><img src="imagens/tesouro.png" alt="Tesouro Nacional"></a>
+                <a class="dropbtn" href="https://www.gov.br/tesouronacional/pt-br" title="Tesouro Nacional" target="_blank"><img src="imagens/tesouro2.png" alt="Tesouro Nacional"></a>
                 <div class="dropdown-content">
                     <a href="https://sti.tesouro.gov.br/cauc/index.jsf" title="CAUC" target="_blank"><img src="imagens/cauc.png" alt="CAUC"></a>
                     <a href="https://siconfi.tesouro.gov.br/siconfi/index.jsf" title="SICONFI" target="_blank"><img src="imagens/siconfi.jpeg" alt="SICONFI"></a>
@@ -215,7 +216,7 @@
                 <a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/cnpjreva_solicitacao.asp" title="CNPJ" target="_blank"><img src="imagens/cnpj.png" alt="CNPJ"></a>
             </div>
             <div class="dropdown"> <!-- Loop dos links TSE -->
-                <a class="dropbtn" href="https://www.tse.jus.br/" title="TSE" target="_blank"><img src="imagens/tse.png" alt="TSE"></a>
+                <a class="dropbtn" href="https://www.tse.jus.br/" title="TSE" target="_blank"><img src="imagens/tse2.png" alt="TSE"></a>
                 <div class="dropdown-content">
                     <a href="https://sgip3.tse.jus.br/sgip3-consulta/#!/orgao-partidario/selecao-partido-abrangencia" title="SGIP Consulta" target="_blank"><img src="imagens/sgip.jpg" alt="SGIP Consulta"></a>
                     <a href="https://divulgacandcontas.tse.jus.br/divulga/#/" title="DivulgaCand" target="_blank"><img src="imagens/divulgacand.jpg" alt="DivulgaCand"></a>
@@ -230,7 +231,7 @@
                 <a href="https://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx?tipoConsulta=resumo&tipoConteudo=7PhJ+gAVw2g=" title="Consulta NF" target="_blank"><img src="imagens/nfe.png" alt="Consulta NF"></a>
             </div>
             <div class="dropdown"> <!-- Loop dos links PI -->
-                <a class="dropbtn" href="https://www.seduc.pi.gov.br/" title="SEDUC-PI" target="_blank"><img src="imagens/seduc.png" alt="SEDUC-PI"></a>
+                <a class="dropbtn" href="https://www.seduc.pi.gov.br/" title="SEDUC-PI" target="_blank"><img src="imagens/seduc2.png" alt="SEDUC-PI"></a>
                 <div class="dropdown-content">
                     <a href="https://conselhos.mobieduca.me/#/" title="Mobieduca" target="_blank"><img src="imagens/mobieduca.png" alt="Mobieduca"></a>
                     <a href="https://portaldoservidor.pi.gov.br/sso/login?service=https%3A%2F%2Fportaldoservidor.pi.gov.br%2Fportal%2Flogin%2Fcas" title="Portal Servidor PI" target="_blank"><img src="imagens/servidor.png" alt="Portal Servidor PI"></a>
@@ -270,12 +271,8 @@
                 </div>                
                 <div class="mySlides fade">
                   <div class="numbertext">2 / 3</div>
-                  <img src="imagens/fachada.jpg" alt="Fachada" style="width: 100%;">
-                </div>                
-                <div class="mySlides fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="imagens/fachada.jpg" alt="Fachada" style="width: 100%;">
-                </div>                
+                  <img src="imagens/reuniao.jpg" alt="Fachada" style="width: 100%;">
+                </div>     
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>                
             </div>                
