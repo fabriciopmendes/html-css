@@ -75,7 +75,7 @@ nav .dropbtn::after {
     border-width: 0 6px 6px 6px;
     border-color: transparent transparent white transparent;
     transition: transform 0.3s ease;
-  }
+}
 nav a:hover, nav a:focus, nav .dropdown-content a:hover { /* Efeitos visuais quando passa o mouse */
     /**Linha Azul*box-shadow: inset 0px -3px 0px #09b6aab7;*/
     box-shadow: inset -10px 0px 1px #09b6aab7;
@@ -94,10 +94,7 @@ nav .dropdown-content a { /* Ajusta o contéudo escondido */
     border-bottom: 1px solid rgb(172, 172, 172);
     display: block;
 }
-.dropdown:hover .dropdown-content { /* Gatilho para surgir o conteúdo */
-    display: block;
-}
-.dropbtn:hover::after {
+nav .dropbtn:hover::after  {
     transform: translateY(-50%) rotate(180deg);
 }
 /* MAIN */
