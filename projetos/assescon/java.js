@@ -1,16 +1,18 @@
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict
-const dropdownContents = document.querySelectorAll('.dropdown-content');
+const dropdownContainers = document.querySelectorAll('.dropdown');
 
-dropdownContents.forEach((dropdownContent) => {
-  const dropbtn = dropdownContent.previousElementSibling;
+dropdownContainers.forEach(container => {
+  const dropbtn = container.querySelector('.dropbtn');
+  const dropdownContent = container.querySelector('.dropdown-content');
+  const seta = container.querySelector('.seta')
 
-  dropdownContent.addEventListener('mouseover', () => {
-    const dropbtnAfter = dropbtn.querySelector('::after');
-    dropbtnAfter.style.transform = 'rotate(90deg)';
+  dropbtn.addEventListener('mouseover', () => {
+    dropdownContent.style.display = 'block';
+    seta.style.transform = 'translateY(-180%) rotate(180deg)';
   });
 
-  dropdownContent.addEventListener('mouseout', () => {
-    const dropbtnAfter = dropbtn.querySelector('::after');
-    dropbtnAfter.style.transform = '';
+  dropbtn.addEventListener('mouseout', () => {
+    dropdownContent.style.display = 'none';
+    seta.style.transform = '';
   });
-}); */
+});
+

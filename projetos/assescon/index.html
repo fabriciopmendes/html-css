@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,34 +10,39 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .row { /* Divide a Tela */
+        .row {
+            /* Divide a Tela */
             display: flex;
         }
+
         /* SIDELINKS */
-        .sidelinks { /*Limita espaço e organiza os links */
+        .sidelinks {
+            /*Limita espaço e organiza os links */
             width: 160px;
             text-align: center;
             position: relative;
             transition-duration: 0.4s;
             background-color: #717171c0;
         }
+
         .sidelinks .dropdown {
-            overflow: hidden; /* Esconde a borda superior do dropdown-content */
+            overflow: hidden;
+            /* Esconde a borda superior do dropdown-content */
         }
+
         .seta {
             content: "";
             position: absolute;
             left: 3px;
-            transform: translateY(-180%) rotate(180deg);
+            transform: translateY(-180%);
             border-style: solid;
             border-width: 0 9px 9px 9px;
             border-color: transparent transparent #09b6ab transparent;
             transition: transform 0.3s ease;
         }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        .sidelinks .dropdown-content { /* Esconde e organiza o conteúdo */
+
+        .sidelinks .dropdown-content {
+            /* Esconde e organiza o conteúdo */
             display: none;
             background-color: #ffffff;
             flex-flow: row wrap;
@@ -44,23 +50,33 @@
             z-index: 1;
             box-shadow: inset 0 0 50px #09b6aab7;
         }
-        .sidelinks .dropdown-content a { /* Organiza itens escondidos */
+
+        .sidelinks .dropdown-content a {
+            /* Organiza itens escondidos */
             margin: auto;
             transition-duration: 0.4s;
-        }        
+        }
+
         /* MAIN */
         .cotacao-container {
             border-left: 2px solid rgba(73, 73, 73, 0.534);
             padding: 10px;
         }
-        .cotacao { /* Organiza a cotação hoje */
+
+        .cotacao {
+            /* Organiza a cotação hoje */
             width: 150px;
             margin-bottom: 5px;
         }
-        .slideshow-container { /* Slideshow container */
+
+        .slideshow-container {
+            /* Slideshow container */
             position: relative;
         }
-        .prev, .next { /* Next & previous buttons */
+
+        .prev,
+        .next {
+            /* Next & previous buttons */
             cursor: pointer;
             position: absolute;
             top: 50%;
@@ -74,14 +90,21 @@
             border-radius: 0 3px 3px 0;
             user-select: none;
         }
-        .next { /* Position the "next button" to the right */
+
+        .next {
+            /* Position the "next button" to the right */
             right: 0;
             border-radius: 3px 0 0 3px;
         }
-        .prev:hover, .next:hover { /* On hover, add a black background color with a little bit see-through */
-            background-color: rgba(0,0,0,0.8);
+
+        .prev:hover,
+        .next:hover {
+            /* On hover, add a black background color with a little bit see-through */
+            background-color: rgba(0, 0, 0, 0.8);
         }
-        .text { /* Caption text */
+
+        .text {
+            /* Caption text */
             color: #f2f2f2;
             font-size: 15px;
             padding: 8px 12px;
@@ -90,14 +113,18 @@
             width: 100%;
             text-align: center;
         }
-        .numbertext { /* Number text (1/3 etc) */
+
+        .numbertext {
+            /* Number text (1/3 etc) */
             color: #f2f2f2;
             font-size: 12px;
             padding: 8px 12px;
             position: absolute;
             top: 0;
         }
-        .dot { /* The dots/bullets/indicators */
+
+        .dot {
+            /* The dots/bullets/indicators */
             cursor: pointer;
             height: 15px;
             width: 15px;
@@ -107,22 +134,40 @@
             display: inline-block;
             transition: background-color 0.6s ease;
         }
-        .active, .dot:hover {
+
+        .active,
+        .dot:hover {
             background-color: #717171;
         }
-        .fade { /* Fading animation */
+
+        .fade {
+            /* Fading animation */
             animation-name: fade;
             animation-duration: 1.5s;
         }
+
         @keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
         }
-        @media only screen and (max-width: 300px) { /* On smaller screens, decrease text size */
-            .prev, .next,.text {font-size: 11px}
+
+        @media only screen and (max-width: 300px) {
+
+            /* On smaller screens, decrease text size */
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
         }
     </style>
 </head>
+
 <body> <!-- Inicial -->
 
     <header> <!-- Logo -->
@@ -163,21 +208,27 @@
         <a href="empresa.html">EMPRESA</a> <!-- Quem Somos -->
         <div class="dropdown"> <!-- Loop dos Serviços -->
             <div class="dropbtn">SERVIÇOS
-            <div class="dropdown-content"> <!-- Contéudo -->
-                <a href="contabil.html">Contábil</a>
-                <a href="irpf.html">IRPF 2023</a>
-            </div>
+                <div class="dropdown-content"> <!-- Contéudo -->
+                    <a href="contabil.html">Contábil</a>
+                    <a href="irpf.html">IRPF 2023</a>
+                </div>
             </div> <!-- Acesso aos Serviços -->
         </div>
         <div class="dropdown"> <!-- Loop das Certidões -->
             <div class="dropbtn">CERTIDÕES
-            <div class="dropdown-content"> <!-- Contéudo -->
-                <a href="https://webas.sefaz.pi.gov.br/certidaonft-web/index.xhtml" target="_blank" title="Secretaria de Fazenda do Estado do Piauí">SEFAZ-PI</a>
-                <a href="https://semf.pmt.pi.gov.br/emissao-de-certidoes/" target="_blank" title="Prefeitura Municipal de Teresina">Teresina</a>
-                <a href="https://www.tst.jus.br/certidao1" target="_blank" title="Justiça do Trabalho - Tribunal Superior do Trabalho">TST</a>
-                <a href="https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf" target="_blank" title="Fundo de Garantia do Tempo de Serviço">FGTS</a>
-                <a href="https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Emitir" target="_blank" title="Débitos Relativos a Créditos Tributários Federais e à Dívida Ativa da União">Federal</a>
-            </div>
+                <div class="dropdown-content"> <!-- Contéudo -->
+                    <a href="https://webas.sefaz.pi.gov.br/certidaonft-web/index.xhtml" target="_blank"
+                        title="Secretaria de Fazenda do Estado do Piauí">SEFAZ-PI</a>
+                    <a href="https://semf.pmt.pi.gov.br/emissao-de-certidoes/" target="_blank"
+                        title="Prefeitura Municipal de Teresina">Teresina</a>
+                    <a href="https://www.tst.jus.br/certidao1" target="_blank"
+                        title="Justiça do Trabalho - Tribunal Superior do Trabalho">TST</a>
+                    <a href="https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf" target="_blank"
+                        title="Fundo de Garantia do Tempo de Serviço">FGTS</a>
+                    <a href="https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Emitir"
+                        target="_blank"
+                        title="Débitos Relativos a Créditos Tributários Federais e à Dívida Ativa da União">Federal</a>
+                </div>
             </div> <!-- Acesso as Certidões -->
         </div>
         <a href="equipe.html">EQUIPE</a> <!-- Colaboradores -->
@@ -187,93 +238,153 @@
     <section class="row"> <!-- Flexbox dividindo tela -->
         <div class="sidelinks"> <!-- Itens Laterais (links) -->
             <div class="dropdown"> <!-- Loop dos links TCE-PI -->
-                <a href="https://www.tce.pi.gov.br/" title="Tribunal de Contas do Estado do Piauí" target="_blank"><img src="imagens/tce.png"></a>
-                <div class="dropdown-content">
-                    <a href="https://sistemas.tce.pi.gov.br/sagres-web/login.xhtml" title="SAGRES WEB" target="_blank"><img src="imagens/sagres.png"></a>
-                    <a href="https://sistemas.tce.pi.gov.br/documentacao-web/" title="DOCUMENTAÇÃO WEB" target="_blank"><img src="imagens/documentacaoweb.webp"></a>
-                    <a href="https://sistemas.tcepi.tc.br/contratosweb/" title="CONTRATOS WEB" target="_blank"><img src="imagens/contratos.webp"></a>
-                    <a href="https://sistemas.tcepi.tc.br/licitacoesweb/" title="LICITAÇÃO WEB" target="_blank"><img src="imagens/licitacoes.webp"></a>
-                    <a href="https://sistemas.tcepi.tc.br/cadastroweb/f/t/inicial" title="CADASTRO WEB" target="_blank"><img src="imagens/cadastroweb.webp"></a>
-                    <a href="https://sistemas.tcepi.tc.br/criacaodeusuarios" title="CRIAÇÃO DE USUÁRIO" target="_blank"><img src="imagens/criacao-de-usuario.webp"></a>
-                    <a href="https://protocoloweb.tce.pi.gov.br/" title="PROTOCOLO WEB" target="_blank"><img src="imagens/protocolo-tce.jpg"></a>
+                <div class="dropbtn">
+                    <a href="https://www.tce.pi.gov.br/" title="Tribunal de Contas do Estado do Piauí"
+                        target="_blank"><img src="imagens/tce.png"></a>
+                    <div class="dropdown-content">
+                        <a href="https://sistemas.tce.pi.gov.br/sagres-web/login.xhtml" title="SAGRES WEB"
+                            target="_blank"><img src="imagens/sagres.png"></a>
+                        <a href="https://sistemas.tce.pi.gov.br/documentacao-web/" title="DOCUMENTAÇÃO WEB"
+                            target="_blank"><img src="imagens/documentacaoweb.webp"></a>
+                        <a href="https://sistemas.tcepi.tc.br/contratosweb/" title="CONTRATOS WEB" target="_blank"><img
+                                src="imagens/contratos.webp"></a>
+                        <a href="https://sistemas.tcepi.tc.br/licitacoesweb/" title="LICITAÇÃO WEB" target="_blank"><img
+                                src="imagens/licitacoes.webp"></a>
+                        <a href="https://sistemas.tcepi.tc.br/cadastroweb/f/t/inicial" title="CADASTRO WEB"
+                            target="_blank"><img src="imagens/cadastroweb.webp"></a>
+                        <a href="https://sistemas.tcepi.tc.br/criacaodeusuarios" title="CRIAÇÃO DE USUÁRIO"
+                            target="_blank"><img src="imagens/criacao-de-usuario.webp"></a>
+                        <a href="https://protocoloweb.tce.pi.gov.br/" title="PROTOCOLO WEB" target="_blank"><img
+                                src="imagens/protocolo-tce.jpg"></a>
+                    </div>
                 </div>
+                <div class="seta"></div>
             </div>
-            <div class="seta"></div>
             <div class="dropdown"> <!-- Loop dos links RF -->
-                <a href="https://www.gov.br/tesouronacional/pt-br" title="Tesouro Nacional" target="_blank"><img src="imagens/tesouro2.png" alt="Tesouro Nacional"></a>
-                <div class="dropdown-content">
-                    <a href="https://sti.tesouro.gov.br/cauc/index.jsf" title="CAUC" target="_blank"><img src="imagens/cauc2.png" alt="CAUC"></a>
-                    <a href="https://siconfi.tesouro.gov.br/siconfi/index.jsf" title="SICONFI" target="_blank"><img src="imagens/siconfi2.jpg" alt="SICONFI"></a>
+                <div class="dropbtn">
+                    <a href="https://www.gov.br/tesouronacional/pt-br" title="Tesouro Nacional" target="_blank"><img
+                            src="imagens/tesouro2.png" alt="Tesouro Nacional"></a>
+                    <div class="dropdown-content">
+                        <a href="https://sti.tesouro.gov.br/cauc/index.jsf" title="CAUC" target="_blank"><img
+                                src="imagens/cauc2.png" alt="CAUC"></a>
+                        <a href="https://siconfi.tesouro.gov.br/siconfi/index.jsf" title="SICONFI" target="_blank"><img
+                                src="imagens/siconfi2.jpg" alt="SICONFI"></a>
+                    </div>
                 </div>
+                <div class="seta"></div>
             </div>
-            <div class="seta"></div>
-            <a href="https://www42.bb.com.br/portalbb/daf/beneficiario,802,4647,4652,0,1.bbx" title="DAF BB" target="_blank"><img src="imagens/bb.png" alt="DAF BB"></a>
-            <a href="http://cas.aossoftware.com.br/apps/index.php/login" title="AOS Login" target="_blank"><img src="imagens/aos.png" alt="AOS Login"></a>
-            <a href="http://app.diarioficialdosmunicipios.org:8086/controlepublicacao/" title="DOM Publicação" target="_blank"><img src="imagens/dom.jpeg" alt="DOM Publicação"></a>
-            <a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/cnpjreva_solicitacao.asp" title="CNPJ" target="_blank"><img src="imagens/cnpj.png" alt="CNPJ"></a>
+            <a href="https://www42.bb.com.br/portalbb/daf/beneficiario,802,4647,4652,0,1.bbx" title="DAF BB"
+                target="_blank"><img src="imagens/bb.png" alt="DAF BB"></a>
+            <a href="http://cas.aossoftware.com.br/apps/index.php/login" title="AOS Login" target="_blank"><img
+                    src="imagens/aos.png" alt="AOS Login"></a>
+            <a href="http://app.diarioficialdosmunicipios.org:8086/controlepublicacao/" title="DOM Publicação"
+                target="_blank"><img src="imagens/dom.jpeg" alt="DOM Publicação"></a>
+            <a href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/cnpjreva_solicitacao.asp" title="CNPJ"
+                target="_blank"><img src="imagens/cnpj.png" alt="CNPJ"></a>
             <div class="dropdown"> <!-- Loop dos links TSE -->
-                <a href="https://www.tse.jus.br/" title="TSE" target="_blank"><img src="imagens/tse2.png" alt="TSE"></a>
-                <div class="dropdown-content">
-                    <a href="https://sgip3.tse.jus.br/sgip3-consulta/#!/orgao-partidario/selecao-partido-abrangencia" title="SGIP Consulta" target="_blank"><img src="imagens/sgip.jpg" alt="SGIP Consulta"></a>
-                    <a href="https://divulgacandcontas.tse.jus.br/divulga/#/" title="DivulgaCand" target="_blank"><img src="imagens/divulgacand.jpg" alt="DivulgaCand"></a>
+                <div class="dropbtn">
+                    <a href="https://www.tse.jus.br/" title="TSE" target="_blank"><img src="imagens/tse2.png"
+                            alt="TSE"></a>
+                    <div class="dropdown-content">
+                        <a href="https://sgip3.tse.jus.br/sgip3-consulta/#!/orgao-partidario/selecao-partido-abrangencia"
+                            title="SGIP Consulta" target="_blank"><img src="imagens/sgip.jpg" alt="SGIP Consulta"></a>
+                        <a href="https://divulgacandcontas.tse.jus.br/divulga/#/" title="DivulgaCand"
+                            target="_blank"><img src="imagens/divulgacand.jpg" alt="DivulgaCand"></a>
+                    </div>
                 </div>
+                <div class="seta"></div>
             </div>
-            <div class="seta"></div>
-            <a href="https://www.fnde.gov.br/sigpc/login.seam" title="SIGPC" target="_blank"><img src="imagens/sigpc2.jpg" alt="SIGPC"></a>
-            <a href="https://www.gov.br/receitafederal/pt-br" title="Receita Federal" target="_blank"><img src="imagens/rf.png" alt="Receita Federal"></a>
-            <a href="https://cav.receita.fazenda.gov.br/autenticacao/login" title="E-cac" target="_blank"><img src="imagens/ecac.jpg" alt="E-cac"></a>
-            <a href="http://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21" title="Simples Nacional" target="_blank"><img src="imagens/simples.jpg" alt="Simples Nacional"></a>
-            <a href="https://www.issdigitalthe.com.br/nfsa/" title="NFSe-A" target="_blank"><img src="imagens/nfse-a.jpg" alt="NFSe-A"></a>
-            <a href="https://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx?tipoConsulta=resumo&tipoConteudo=7PhJ+gAVw2g=" title="Consulta NF" target="_blank"><img src="imagens/nfe.png" alt="Consulta NF"></a>
+            <a href="https://www.fnde.gov.br/sigpc/login.seam" title="SIGPC" target="_blank"><img
+                    src="imagens/sigpc2.jpg" alt="SIGPC"></a>
+            <a href="https://www.gov.br/receitafederal/pt-br" title="Receita Federal" target="_blank"><img
+                    src="imagens/rf.png" alt="Receita Federal"></a>
+            <a href="https://cav.receita.fazenda.gov.br/autenticacao/login" title="E-cac" target="_blank"><img
+                    src="imagens/ecac.jpg" alt="E-cac"></a>
+            <a href="http://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21" title="Simples Nacional"
+                target="_blank"><img src="imagens/simples.jpg" alt="Simples Nacional"></a>
+            <a href="https://www.issdigitalthe.com.br/nfsa/" title="NFSe-A" target="_blank"><img
+                    src="imagens/nfse-a.jpg" alt="NFSe-A"></a>
+            <a href="https://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx?tipoConsulta=resumo&tipoConteudo=7PhJ+gAVw2g="
+                title="Consulta NF" target="_blank"><img src="imagens/nfe.png" alt="Consulta NF"></a>
             <div class="dropdown"> <!-- Loop dos links PI -->
-                <a href="https://www.seduc.pi.gov.br/" title="SEDUC-PI" target="_blank"><img src="imagens/seduc2.png" alt="SEDUC-PI"></a>
-                <div class="dropdown-content">
-                    <a href="https://conselhos.mobieduca.me/#/" title="Mobieduca" target="_blank"><img src="imagens/mobieduca.png" alt="Mobieduca"></a>
-                    <a href="https://portaldoservidor.pi.gov.br/sso/login?service=https%3A%2F%2Fportaldoservidor.pi.gov.br%2Fportal%2Flogin%2Fcas" title="Portal Servidor PI" target="_blank"><img src="imagens/servidor.png" alt="Portal Servidor PI"></a>
-                    <a href="https://sei.pi.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&acao_origem_externa=protocolo_pesquisar&id_orgao_acesso_externo=0" title="Portal SEI" target="_blank"><img src="imagens/sei.jpg" alt="Portal SEI"></a>
-                    <a href="https://tools.pdf24.org/pt/" title="PDF 24" target="_blank"><img src="imagens/pdf.png" alt="PDF 24"></a>
+                <div class="dropbtn">
+                    <a href="https://www.seduc.pi.gov.br/" title="SEDUC-PI" target="_blank"><img
+                            src="imagens/seduc2.png" alt="SEDUC-PI"></a>
+                    <div class="dropdown-content">
+                        <a href="https://conselhos.mobieduca.me/#/" title="Mobieduca" target="_blank"><img
+                                src="imagens/mobieduca.png" alt="Mobieduca"></a>
+                        <a href="https://portaldoservidor.pi.gov.br/sso/login?service=https%3A%2F%2Fportaldoservidor.pi.gov.br%2Fportal%2Flogin%2Fcas"
+                            title="Portal Servidor PI" target="_blank"><img src="imagens/servidor.png"
+                                alt="Portal Servidor PI"></a>
+                        <a href="https://sei.pi.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&acao_origem_externa=protocolo_pesquisar&id_orgao_acesso_externo=0"
+                            title="Portal SEI" target="_blank"><img src="imagens/sei.jpg" alt="Portal SEI"></a>
+                        <a href="https://tools.pdf24.org/pt/" title="PDF 24" target="_blank"><img src="imagens/pdf.png"
+                                alt="PDF 24"></a>
+                    </div>
                 </div>
+                <div class="seta"></div>
             </div>
-            <div class="seta"></div>
-            <a href="https://cfc.org.br/" title="Conselho Federal de Contabilidade" target="_blank"><img src="imagens/cfc.png" alt="Conselho Federal de Contabilidade"></a>
-            <a href="https://crcpi.com.br/new/" title="Conselho Regional de Contabilidade do Piauí" target="_blank"><img src="imagens/crc.png" alt="Conselho Regional de Contabilidade do Piauí"></a>
+            <a href="https://cfc.org.br/" title="Conselho Federal de Contabilidade" target="_blank"><img
+                    src="imagens/cfc.png" alt="Conselho Federal de Contabilidade"></a>
+            <a href="https://crcpi.com.br/new/" title="Conselho Regional de Contabilidade do Piauí" target="_blank"><img
+                    src="imagens/crc.png" alt="Conselho Regional de Contabilidade do Piauí"></a>
             <p><b>Links Úteis</b></p>
         </div>
         <div class="main"> <!-- Contéudo principal restante da flexbox -->
-            <table>  <!-- Tabela que junta o paragrafo com a cotação -->
+            <table> <!-- Tabela que junta o paragrafo com a cotação -->
                 <tr>
                     <td class="paragrafo-container"> <!-- Paragrafos -->
-                        <p> A ASSESCON – ASSESSORIA & CONSULTORIA CONTABIL LTDA é uma empresa especializada em serviços contábeis de área de Contabilidade Publica, Empresarial, Terceiro Setor e Partidária/Eleitoral, que vem atuando neste ramo desde 2009, tendo prestado serviços relevantes nestas áreas em vários Estados do <strong>Piauí</strong> e <strong>Maranhão</strong>.</p>
+                        <p> A ASSESCON – ASSESSORIA & CONSULTORIA CONTABIL LTDA é uma empresa especializada em serviços
+                            contábeis de área de Contabilidade Publica, Empresarial, Terceiro Setor e
+                            Partidária/Eleitoral, que vem atuando neste ramo desde 2009, tendo prestado serviços
+                            relevantes nestas áreas em vários Estados do <strong>Piauí</strong> e
+                            <strong>Maranhão</strong>.
+                        </p>
                         <p>Navegue pelo nosso site e saiba o que podemos lhe oferecer.</p>
                         <p>"O sucesso é a soma de pequenos esforços - repetidos dia sim, e no outro dia também."</p>
                     </td>
                     <td class="cotacao-container"> <!-- Cotação -->
                         <h4 class="cotacao">Cotação Hoje:</h4>
-                        <div class="cotacao"><a href="https://dolarhoje.com/" class="dolar-hoje-button" data-currency="dolar" target="_blank" title="Cotação do Dólar Hoje">Dólar Hoje</a><script async src="//dolarhoje-widgets.s3.amazonaws.com/button.js"></script></div>
-                        <div class="cotacao"><a href="https://dolarhoje.com/euro-hoje/" class="dolar-hoje-button" data-currency="euro" target="_blank" title="Cotação do Euro Hoje">Euro Hoje</a><script async src="//dolarhoje-widgets.s3.amazonaws.com/button.js" charset="utf-8"></script></div>
-                        <div class="cotacao"><a href="https://dolarhoje.com/ouro-hoje/" class="dolar-hoje-button" data-currency="ouro" target="_blank" title="Cotação do Ouro Hoje">Ouro Hoje</a><script async src="//dolarhoje-widgets.s3.amazonaws.com/button.js" charset="utf-8"></script></div>
-                        <div class="cotacao"><a href="https://dolarhoje.com/bitcoin-hoje/" class="dolar-hoje-button" data-currency="bitcoin" target="_blank" title="Cotação do Bitcoin Hoje">Bitcoin Hoje</a><script async src="//dolarhoje-widgets.s3.amazonaws.com/button.js" charset="utf-8"></script></div>
+                        <div class="cotacao"><a href="https://dolarhoje.com/" class="dolar-hoje-button"
+                                data-currency="dolar" target="_blank" title="Cotação do Dólar Hoje">Dólar Hoje</a>
+                            <script async src="//dolarhoje-widgets.s3.amazonaws.com/button.js"></script>
+                        </div>
+                        <div class="cotacao"><a href="https://dolarhoje.com/euro-hoje/" class="dolar-hoje-button"
+                                data-currency="euro" target="_blank" title="Cotação do Euro Hoje">Euro Hoje</a>
+                            <script async src="//dolarhoje-widgets.s3.amazonaws.com/button.js" charset="utf-8"></script>
+                        </div>
+                        <div class="cotacao"><a href="https://dolarhoje.com/ouro-hoje/" class="dolar-hoje-button"
+                                data-currency="ouro" target="_blank" title="Cotação do Ouro Hoje">Ouro Hoje</a>
+                            <script async src="//dolarhoje-widgets.s3.amazonaws.com/button.js" charset="utf-8"></script>
+                        </div>
+                        <div class="cotacao"><a href="https://dolarhoje.com/bitcoin-hoje/" class="dolar-hoje-button"
+                                data-currency="bitcoin" target="_blank" title="Cotação do Bitcoin Hoje">Bitcoin Hoje</a>
+                            <script async src="//dolarhoje-widgets.s3.amazonaws.com/button.js" charset="utf-8"></script>
+                        </div>
                     </td>
                 </tr>
             </table>
             <div class="slideshow-container"> <!-- Caixa dos Slides -->
                 <div class="mySlides fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="imagens/fachada.jpg" alt="Fachada" style="width: 100%;">
-                </div>                
+                    <div class="numbertext">1 / 3</div>
+                    <img src="imagens/fachada.jpg" alt="Fachada" style="width: 100%;">
+                </div>
                 <div class="mySlides fade">
-                  <div class="numbertext">2 / 3</div>
-                  <img src="imagens/reuniao.jpg" alt="Fachada" style="width: 100%;">
-                </div>     
+                    <div class="numbertext">2 / 3</div>
+                    <img src="imagens/reuniao.jpg" alt="Fachada" style="width: 100%;">
+                </div>
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>                
-            </div>                
-            <div style="text-align:center"> <!-- Pontos dos Slides -->
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
+                <a class="next" onclick="plusSlides(1)">❯</a>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.8904505740015!2d-42.812457549191926!3d-5.121350553257049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e36e2202b21e5%3A0xde01e6817509f9b4!2sASSESCON%20(Acess%C3%B3ria%20%26%20Consultoria%20Cont%C3%A1bil%20LTDA)!5e0!3m2!1spt-PT!2sbr!4v1672075108306!5m2!1spt-PT!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Mapa -->
+            <div style="text-align:center"> <!-- Pontos dos Slides -->
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.8904505740015!2d-42.812457549191926!3d-5.121350553257049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e36e2202b21e5%3A0xde01e6817509f9b4!2sASSESCON%20(Acess%C3%B3ria%20%26%20Consultoria%20Cont%C3%A1bil%20LTDA)!5e0!3m2!1spt-PT!2sbr!4v1672075108306!5m2!1spt-PT!2sbr"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Mapa -->
         </div>
     </section>
 
@@ -281,35 +392,38 @@
         <p>Todos os direitos reservados | 2023 | ASSESCON - Assessoria & Consultoria Contábil</p>
     </footer>
 
+    <script src="java.js"></script>
+
     <script> // Script Slides
         let slideIndex = 1;
         showSlides(slideIndex);
         function plusSlides(n) {
-        showSlides(slideIndex += n);
+            showSlides(slideIndex += n);
         }
         function currentSlide(n) {
-        showSlides(slideIndex = n);
+            showSlides(slideIndex = n);
         }
         function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        // Atrasa a chamada da função showSlides para o próximo slide
-        setTimeout(function() {
-            showSlides(slideIndex += 1);
-        }, 2500);
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            // Atrasa a chamada da função showSlides para o próximo slide
+            setTimeout(function () {
+                showSlides(slideIndex += 1);
+            }, 2500);
         }
     </script>
 
 </body>
+
 </html>
