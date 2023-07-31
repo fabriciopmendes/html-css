@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +14,8 @@
             flex-wrap: wrap;
             padding: 10px;
         }
-        div#contador {
+
+        div.contador {
             background-image: radial-gradient(white, lightgray);
             font-weight: bold;
             width: 350px;
@@ -22,6 +24,7 @@
             padding: 0px;
             margin: 10px auto;
         }
+
         p.nome {
             background-image: radial-gradient(gray, rgb(78, 78, 78));
             border-radius: 10px 10px 0px 0px;
@@ -29,6 +32,7 @@
             font-weight: bold;
             padding-top: 8px;
         }
+
         div.foto {
             display: flex;
             float: left;
@@ -36,12 +40,13 @@
         }
     </style>
 </head>
-<body> <!-- Inicial -->
 
-    <header> <!-- Logo -->
+<body>
+    <!-- HEADER -->
+    <header>
         <div class="contabilidade">
-            <a href="index.html"><img style="box-shadow: none;" src="imagens/logo2.png" alt=""></a>
-            <a style="text-decoration: none;" href="contabil.html">
+            <a href="index.html"><img style="box-shadow: none;" src="imagens/logo2.png" alt="logo"></a>
+            <a href="contabil.html">
                 <ul>
                     <li>Contabilidade do Terceiro Setor</li>
                     <li>Contabilidade Pública</li>
@@ -51,7 +56,7 @@
             </a>
         </div>
         <div class="ident"><br>
-            <a style="text-decoration: none;" href="equipe.html">
+            <a href="equipe.html">
                 <div class="socios">
                     <p>Evandro Pinheiro Mendes</p>
                     <small>
@@ -70,78 +75,92 @@
             </div>
         </div>
     </header>
-
-    <nav> <!-- Barra de navegação com toggle menu -->
+    <!-- NAV Toggle -->
+    <nav>
         <a href="index.html"><i class="fa fa-home"></i></a> <!-- Home -->
         <a href="empresa.html">EMPRESA</a> <!-- Quem Somos -->
-        <div class="dropdown"> <!-- Loop dos Serviços -->
+        <div class="dropdown"> <!-- Serviços -->
             <div class="dropbtn">SERVIÇOS
-            <div class="dropdown-content"> <!-- Contéudo -->
-                <a href="contabil.html">Contábil</a>
-                <a href="irpf.html">IRPF 2023</a>
+                <div class="dropdown-content"> <!-- Contéudo -->
+                    <a href="contabil.html">Contábil</a>
+                    <a href="irpf.html">IRPF 2023</a>
+                </div>
             </div>
-            </div> <!-- Acesso aos Serviços -->
         </div>
-        <div class="dropdown"> <!-- Loop das Certidões -->
+        <div class="dropdown"> <!-- Certidões -->
             <div class="dropbtn">CERTIDÕES
-            <div class="dropdown-content"> <!-- Contéudo -->
-                <a href="https://webas.sefaz.pi.gov.br/certidaonft-web/index.xhtml" target="_blank" title="Secretaria de Fazenda do Estado do Piauí">SEFAZ-PI</a>
-                <a href="https://semf.pmt.pi.gov.br/emissao-de-certidoes/" target="_blank" title="Prefeitura Municipal de Teresina">Teresina</a>
-                <a href="https://www.tst.jus.br/certidao1" target="_blank" title="Justiça do Trabalho - Tribunal Superior do Trabalho">TST</a>
-                <a href="https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf" target="_blank" title="Fundo de Garantia do Tempo de Serviço">FGTS</a>
-                <a href="https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Emitir" target="_blank" title="Débitos Relativos a Créditos Tributários Federais e à Dívida Ativa da União">Federal</a>
+                <div class="dropdown-content"> <!-- Contéudo -->
+                    <a href="https://webas.sefaz.pi.gov.br/certidaonft-web/index.xhtml" target="_blank"
+                        title="Secretaria de Fazenda do Estado do Piauí">SEFAZ-PI</a>
+                    <a href="https://semf.pmt.pi.gov.br/emissao-de-certidoes/" target="_blank"
+                        title="Prefeitura Municipal de Teresina">Teresina</a>
+                    <a href="https://www.tst.jus.br/certidao1" target="_blank"
+                        title="Justiça do Trabalho - Tribunal Superior do Trabalho">TST</a>
+                    <a href="https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf" target="_blank"
+                        title="Fundo de Garantia do Tempo de Serviço">FGTS</a>
+                    <a href="https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Emitir"
+                        target="_blank"
+                        title="Débitos Relativos a Créditos Tributários Federais e à Dívida Ativa da União">Federal</a>
+                </div>
             </div>
-            </div> <!-- Acesso as Certidões -->
         </div>
         <a href="equipe.html">EQUIPE</a> <!-- Colaboradores -->
         <a href="clientes.html">CLIENTES</a> <!-- Controle prestação de contas mensal -->
     </nav>
-
-    <section id="equipe"> <!-- Cartões de Apresentação -->
-        <div id="contador"> <!-- Evandro -->
+    <!-- Cartões de Apresentação -->
+    <section id="equipe">
+        <div class="contador"> <!-- Evandro -->
             <p class="nome">Evandro Pinheiro Mendes</p>
-            <div class="foto">                    
+            <div class="foto">
                 <img src="imagens/evandro.jpg" alt="Evandro">
             </div>
             <p>CRC: PI-006379/O</p>
             <p>Tel: (86)99975-2270</p>
             <p class="sublinhado">Acesse:</p>
-            <a href="https://www.instagram.com/evandro_mendes_frazao/?igshid=OGQ2MjdiOTE%3D" target="_blank"><img src="imagens/logo-instagram.jpg" alt="instagram"></a>
-            <a href="https://www.facebook.com/evandropmf?mibextid=ZbWKwL" target="_blank"><img src="imagens/logo-facebook.jpg" alt="Facebook"></a>
-            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5586999752270" target="_blank"><img src="imagens/icone_whastapp.png" alt="Whatsapp"></a>
+            <a href="https://www.instagram.com/evandro_mendes_frazao/?igshid=OGQ2MjdiOTE%3D" target="_blank"><img
+                    src="imagens/logo-instagram.jpg" alt="instagram"></a>
+            <a href="https://www.facebook.com/evandropmf?mibextid=ZbWKwL" target="_blank"><img
+                    src="imagens/logo-facebook.jpg" alt="Facebook"></a>
+            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5586999752270" target="_blank"><img
+                    src="imagens/icone_whastapp.png" alt="Whatsapp"></a>
             <br><br><br>
             <hr>
             <p>Especialista Contabilidade Pública</p>
             <p>Especialista Contabilidade Empresarial</p>
             <p>Especialista Contabilidade Partidária/Eleitoral</p>
         </div>
-        <div id="contador"> <!-- Fabricio -->
+        <div class="contador"> <!-- Fabricio -->
             <p class="nome">Fabricio Pinheiro Mendes</p>
-            <div class="foto">                    
+            <div class="foto">
                 <img src="imagens/fabricio.jpeg" alt="Fabricio">
             </div>
             <p>CRC: PI-010429/O-7</p>
             <p>Tel: (86)99906-0104</p>
             <p class="sublinhado">Acesse:</p>
-            <a href="https://www.instagram.com/fabricio_p_mendes/" target="_blank"><img src="imagens/logo-instagram.jpg" alt="instagram"></a>
-            <a href="https://www.facebook.com/profile.php?id=100022137041541" target="_blank"><img src="imagens/logo-facebook.jpg" alt="Facebook"></a>
-            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=558699060104" target="_blank"><img src="imagens/icone_whastapp.png" alt="Whatsapp"></a>
+            <a href="https://www.instagram.com/fabricio_p_mendes/" target="_blank"><img src="imagens/logo-instagram.jpg"
+                    alt="instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=100022137041541" target="_blank"><img
+                    src="imagens/logo-facebook.jpg" alt="Facebook"></a>
+            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=558699060104" target="_blank"><img
+                    src="imagens/icone_whastapp.png" alt="Whatsapp"></a>
             <br><br><br>
             <hr>
             <p>Especialista Contabilidade Pública</p>
             <p>Especialista Contabilidade Eleitoral</p>
             <p>Agente de Registro</p>
         </div>
-        <div id="contador"> <!-- Rubens -->
+        <div class="contador"> <!-- Rubens -->
             <p class="nome">Rubens Kaique Frazão Mourão</p>
-            <div class="foto">                    
+            <div class="foto">
                 <img src="imagens/rubens.jpg" alt="Rubens">
             </div>
             <p>CRC: PI-012063/O-9</p>
             <p>Tel: (86)99953-3342</p>
             <p class="sublinhado">Acesse:</p>
-            <a href="https://www.instagram.com/mouraorubens/?igshid=YmMyMTA2M2Y" target="_blank"><img src="imagens/logo-instagram.jpg" alt="instagram"></a>
-            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=558699533342" target="_blank"><img src="imagens/icone_whastapp.png" alt="Whatsapp"></a>
+            <a href="https://www.instagram.com/mouraorubens/?igshid=YmMyMTA2M2Y" target="_blank"><img
+                    src="imagens/logo-instagram.jpg" alt="instagram"></a>
+            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=558699533342" target="_blank"><img
+                    src="imagens/icone_whastapp.png" alt="Whatsapp"></a>
             <br><br><br>
             <hr>
             <p>Especialista Contabilidade Pública</p>
@@ -149,10 +168,13 @@
             <p>Especialista Contabilidade Comercial</p>
         </div>
     </section>
-
-    <footer> <!-- Final -->
+    <!-- FINAL -->
+    <footer>
         <p>Todos os direitos reservados | 2023 | ASSESCON - Assessoria & Consultoria Contábil</p>
     </footer>
-
+    <!-- TOGGLE Menu -->
+    <script src="java.js"></script>
+    <!-- FINAL body -->
 </body>
+
 </html>

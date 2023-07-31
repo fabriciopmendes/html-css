@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body> <!-- Inicial -->
 
-    <header> <!-- Logo -->
+<body>
+    <!-- HEADER -->
+    <header>
         <div class="contabilidade">
-            <a href="index.html"><img style="box-shadow: none;" src="imagens/logo2.png" alt=""></a>
-            <a style="text-decoration: none;" href="contabil.html">
+            <a href="index.html"><img style="box-shadow: none;" src="imagens/logo2.png" alt="logo"></a>
+            <a href="contabil.html">
                 <ul>
                     <li>Contabilidade do Terceiro Setor</li>
                     <li>Contabilidade Pública</li>
@@ -23,7 +25,7 @@
             </a>
         </div>
         <div class="ident"><br>
-            <a style="text-decoration: none;" href="equipe.html">
+            <a href="equipe.html">
                 <div class="socios">
                     <p>Evandro Pinheiro Mendes</p>
                     <small>
@@ -42,40 +44,49 @@
             </div>
         </div>
     </header>
-
-    <nav> <!-- Barra de navegação com toggle menu -->
+    <!-- NAV Toggle -->
+    <nav>
         <a href="index.html"><i class="fa fa-home"></i></a> <!-- Home -->
         <a href="empresa.html">EMPRESA</a> <!-- Quem Somos -->
-        <div class="dropdown"> <!-- Loop dos Serviços -->
+        <div class="dropdown"> <!-- Serviços -->
             <div class="dropbtn">SERVIÇOS
-            <div class="dropdown-content"> <!-- Contéudo -->
-                <a href="contabil.html">Contábil</a>
-                <a href="irpf.html">IRPF 2023</a>
+                <div class="dropdown-content"> <!-- Contéudo -->
+                    <a href="contabil.html">Contábil</a>
+                    <a href="irpf.html">IRPF 2023</a>
+                </div>
             </div>
-            </div> <!-- Acesso aos Serviços -->
         </div>
-        <div class="dropdown"> <!-- Loop das Certidões -->
+        <div class="dropdown"> <!-- Certidões -->
             <div class="dropbtn">CERTIDÕES
-            <div class="dropdown-content"> <!-- Contéudo -->
-                <a href="https://webas.sefaz.pi.gov.br/certidaonft-web/index.xhtml" target="_blank" title="Secretaria de Fazenda do Estado do Piauí">SEFAZ-PI</a>
-                <a href="https://semf.pmt.pi.gov.br/emissao-de-certidoes/" target="_blank" title="Prefeitura Municipal de Teresina">Teresina</a>
-                <a href="https://www.tst.jus.br/certidao1" target="_blank" title="Justiça do Trabalho - Tribunal Superior do Trabalho">TST</a>
-                <a href="https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf" target="_blank" title="Fundo de Garantia do Tempo de Serviço">FGTS</a>
-                <a href="https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Emitir" target="_blank" title="Débitos Relativos a Créditos Tributários Federais e à Dívida Ativa da União">Federal</a>
+                <div class="dropdown-content"> <!-- Contéudo -->
+                    <a href="https://webas.sefaz.pi.gov.br/certidaonft-web/index.xhtml" target="_blank"
+                        title="Secretaria de Fazenda do Estado do Piauí">SEFAZ-PI</a>
+                    <a href="https://semf.pmt.pi.gov.br/emissao-de-certidoes/" target="_blank"
+                        title="Prefeitura Municipal de Teresina">Teresina</a>
+                    <a href="https://www.tst.jus.br/certidao1" target="_blank"
+                        title="Justiça do Trabalho - Tribunal Superior do Trabalho">TST</a>
+                    <a href="https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf" target="_blank"
+                        title="Fundo de Garantia do Tempo de Serviço">FGTS</a>
+                    <a href="https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Emitir"
+                        target="_blank"
+                        title="Débitos Relativos a Créditos Tributários Federais e à Dívida Ativa da União">Federal</a>
+                </div>
             </div>
-            </div> <!-- Acesso as Certidões -->
         </div>
         <a href="equipe.html">EQUIPE</a> <!-- Colaboradores -->
         <a href="clientes.html">CLIENTES</a> <!-- Controle prestação de contas mensal -->
     </nav>
-
-    <section> <!-- Imagem do texto -->
-        <img src="imagens/irpf1.jpg" alt="">
+    <!-- Imagem do texto -->
+    <section>
+        <img src="imagens/irpf1.jpg" alt="IRPF 2023">
     </section>
-
-    <footer> <!-- Final -->
+    <!-- FINAL -->
+    <footer>
         <p>Todos os direitos reservados | 2023 | ASSESCON - Assessoria & Consultoria Contábil</p>
     </footer>
-    
+    <!-- TOGGLE Menu -->
+    <script src="java.js"></script>
+    <!-- FINAL body -->
 </body>
+
 </html>

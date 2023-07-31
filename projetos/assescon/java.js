@@ -1,6 +1,6 @@
-const dropdownContainers = document.querySelectorAll('.dropdown');
+const dropdownContainer = document.querySelectorAll('.dropdown');
 
-dropdownContainers.forEach(container => {
+dropdownContainer.forEach(container => {
   const dropbtn = container.querySelector('.dropbtn');
   const dropdownContent = container.querySelector('.dropdown-content');
   const seta = container.querySelector('.seta')

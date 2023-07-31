@@ -1,11 +1,11 @@
-@charset "UTF-8"; /* Aceitar caracteres brasileiros */
-/* GERAL */
-* { /* Zera margens padrões e padroniza fonte */
+@charset "UTF-8";
+
+* {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* BODY */
-body { /* Ajusta posição da pagina */
+
+body {
     /*background-image: linear-gradient(135deg, white, white, #08a89d69, #08a89db7, #08a89d);*/
     max-width: 1000px;
     min-height: 1800px;
@@ -16,15 +16,18 @@ body { /* Ajusta posição da pagina */
     background-position: center;
     background-size: cover;
 }
+
 header {
     display: flex;
     justify-content: flex-end;
     max-height: 260px;
 }
+
 .ident {
     text-align: right;
     padding-left: 230px;
 }
+
 .socios p {
     font-size: 1em;
     font-weight: bold;
@@ -32,6 +35,7 @@ header {
     line-height: 0.6em;
     padding-right: 40px;
 }
+
 .end {
     padding-bottom: 5px;
     padding-left: 30px;
@@ -39,32 +43,39 @@ header {
     background-color: #127070a2;
     border-radius: 70% 30% 0% 0%;
 }
+
 .end p {
-    font-size: 1em;    
+    font-size: 1em;
     font-weight: bold;
     line-height: 0.5em;
 }
-/* NAV */
-nav { /* Visão da barra de navegação */
+
+nav {
+    /* Visão da barra de navegação */
     display: flex;
     justify-content: center;
     background-color: #717171c0;
     border-radius: 40px 0px 40px 0px;
 }
+
 nav .dropdown {
     position: relative;
 }
+
 nav a::after {
     box-shadow: 1px -1px;
     transform: scale(.707) rotate(45deg);
 }
-nav a, nav .dropbtn {  /* Decoração dos itens dentro do nav */
+
+nav a,
+nav .dropbtn {
+    /* Decoração dos itens dentro do nav */
     padding: 4px 15px;
-    text-decoration: none;
     text-align: center;
-    color: white;    
+    color: white;
     transition-duration: 0.4s;
 }
+
 nav .dropbtn::after {
     content: "";
     position: absolute;
@@ -76,49 +87,68 @@ nav .dropbtn::after {
     border-color: transparent transparent white transparent;
     transition: transform 0.3s ease;
 }
-nav a:hover, nav a:focus, nav .dropdown-content a:hover { /* Efeitos visuais quando passa o mouse */
+
+nav a:hover,
+nav a:focus,
+nav .dropdown-content a:hover {
+    /* Efeitos visuais quando passa o mouse */
     /**Linha Azul*box-shadow: inset 0px -3px 0px #09b6aab7;*/
     box-shadow: inset -10px 0px 1px #09b6aab7;
     background-color: #ddd;
     color: black;
 }
-nav .dropdown-content { /* Esconde o contéudo para surgir */
+
+nav .dropdown-content {
+    /* Esconde o contéudo para surgir */
     display: none;
     position: absolute;
     z-index: 3;
     background-color: #777777;
 }
-nav .dropdown-content a { /* Ajusta o contéudo escondido */
+
+nav .dropdown-content a {
+    /* Ajusta o contéudo escondido */
     min-width: 92px;
     text-align: justify;
     border-bottom: 1px solid rgb(172, 172, 172);
     display: block;
 }
-nav .dropbtn:hover::after  {
+
+nav .dropbtn:hover::after {
     transform: translateY(-50%) rotate(180deg);
 }
-/* MAIN */
+
 .main {
     border-radius: 20px 0px 0px 20px;
     position: relative;
     z-index: 2;
 }
-div img, iframe { /* Estilo das imagens e iframes */
+
+div img,
+iframe {
+    /* Estilo das imagens e iframes */
     border-radius: 5px;
     margin: 2px;
     box-shadow: 2px 2px 2px rgba(58, 58, 58, 0.13);
 }
-a img:hover { /* Efeito sombreado das imagens */
+
+a img:hover {
+    /* Efeito sombreado das imagens */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.719);
 }
-h2 { /* Configuração dos H2 */
+
+h2 {
+    /* Configuração dos H2 */
     padding: 10px;
     text-align: center;
 }
-p { /* Configuração dos p */
+
+p {
+    /* Configuração dos p */
     line-height: 1.3em;
     padding: 5px;
 }
+
 ul {
     padding-left: 100px;
     font-size: 1.2em;
@@ -126,11 +156,18 @@ ul {
     color: #585858;
     line-height: 1.6em;
 }
-.sublinhado { /*Sublinhar */
+
+a {
+    text-decoration: none;
+}
+
+.sublinhado {
+    /*Sublinhar */
     text-decoration: underline;
 }
-/* FOOTER */
-footer { /* Footer */
+
+footer {
+    /* Footer */
     font-weight: bold;
     text-align: center;
     background-color: #717171c0;
